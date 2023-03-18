@@ -1,12 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import Container from './components/container';
 
-function App() {
+import './style/style-PC.css';
+import './style/style-Tablet.css';
+import './style/style-Mobile.css';
+
+export default function App() {
   return (
-    <div className="App">
-      <p>test world</p>
-    </div>
+    <>
+      <Container />
+    </>
   );
 }
-
-export default App;
