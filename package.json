@@ -2,15 +2,16 @@
   "name": "portfolio-site",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/hyelin213/HYLN-PortfolioSite.git",
+  "homepage": "https://hyelin213.github.io/HYLN-PortfolioSite/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
     "gh-pages": "^5.0.0",
+    "moment": "^2.29.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "swiper": "^9.1.1",
     "web-vitals": "^2.1.0"
   },
