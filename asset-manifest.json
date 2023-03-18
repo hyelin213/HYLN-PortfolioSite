@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/hyelin213/HYLN-PortfolioSite.git/static/css/main.c9046632.css",
-    "main.js": "/hyelin213/HYLN-PortfolioSite.git/static/js/main.e290b23a.js",
-    "static/js/787.37faa4c4.chunk.js": "/hyelin213/HYLN-PortfolioSite.git/static/js/787.37faa4c4.chunk.js",
-    "index.html": "/hyelin213/HYLN-PortfolioSite.git/index.html",
-    "main.c9046632.css.map": "/hyelin213/HYLN-PortfolioSite.git/static/css/main.c9046632.css.map",
-    "main.e290b23a.js.map": "/hyelin213/HYLN-PortfolioSite.git/static/js/main.e290b23a.js.map",
-    "787.37faa4c4.chunk.js.map": "/hyelin213/HYLN-PortfolioSite.git/static/js/787.37faa4c4.chunk.js.map"
+    "main.css": "/HYLN-PortfolioSite/static/css/main.c9046632.css",
+    "main.js": "/HYLN-PortfolioSite/static/js/main.07a4b01c.js",
+    "static/js/787.37faa4c4.chunk.js": "/HYLN-PortfolioSite/static/js/787.37faa4c4.chunk.js",
+    "index.html": "/HYLN-PortfolioSite/index.html",
+    "main.c9046632.css.map": "/HYLN-PortfolioSite/static/css/main.c9046632.css.map",
+    "main.07a4b01c.js.map": "/HYLN-PortfolioSite/static/js/main.07a4b01c.js.map",
+    "787.37faa4c4.chunk.js.map": "/HYLN-PortfolioSite/static/js/787.37faa4c4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c9046632.css",
-    "static/js/main.e290b23a.js"
+    "static/js/main.07a4b01c.js"
   ]
 }
