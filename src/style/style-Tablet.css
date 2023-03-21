@@ -3,6 +3,13 @@
 
 @media screen and (max-width: 1024px) {
 
+    .PC-exposure {
+        display: none;
+    }
+    .tablet-exposure {
+        display: block;
+    }
+
     /* 헤더 전화번호 / 이메일 */
     #header .header-left .info {
         position: absolute;
@@ -23,11 +30,24 @@
         transition: .1s;
     }
 
-    /* intro section */
+    /* intro section ** */
 
     /* 라이트모드 & 다크모드 버튼 */
     #intro .light-dark-mode {
         top: 65vh;
         right: 10vw;
+    }
+
+    /* about section ** */
+
+    #about .about-container {
+        flex-direction: column;
+    }
+
+    #about .about-left .introduction {
+        width: 100%;
+        font-size: 1.3vw;
+        letter-spacing: -0.5px;
+        margin-top: 20px;
     }
 }
