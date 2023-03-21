@@ -31,6 +31,9 @@ export default function Header() {
                     <div className="time-check">
                         {nowTime.format('YYYY.MM.DD HH:mm')}
                     </div>
+                    <div className="light-dark-mode">
+                        <div className="mode-btn"></div>
+                    </div>
                     <div className="menu-btn">
                         <span></span>
                         <span></span>

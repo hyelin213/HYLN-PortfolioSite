@@ -1,6 +1,15 @@
 @charset 'utf-8';
-
 @import url(common.css); /* 공동 style */
+
+@keyframes rotate-shape{
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.mobile-exposure {
+    display: none;
+}
 
 #container {
     width: 100%;
@@ -15,7 +24,7 @@
     z-index: 999;
 }
 #header .header-container {
-    width: 90%;
+    width: 90vw;
     height: 100%;
     margin: 0 auto;
     display: flex;
@@ -35,14 +44,15 @@
 #header .header-left .info {
     position: absolute;
     top: 50%;
-    left: 190%;
+    left: 12vw;
     transform: translate(0, -50%);
-    width: 35vh;
+    width: 20vw;
     
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     color: #A8A8A8;
-    font-size: 12px;
+    font-size: 0.7rem;
     font-weight: 100;
 }
 #header .header-left .info span {
@@ -54,13 +64,20 @@
     font-size: 20px;
 }
 
+/* 헤더 라이트모드 & 다크모드 버튼 */
+#header .light-dark-mode {
+    display: none;
+}
+
 /* 헤더 메뉴 */
 #header .menu-btn {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: flex-end;
     height: 15px;
     cursor: pointer;
+    margin-left: 72.56px;
 }
 #header .menu-btn span {
     display: inline-block;
@@ -75,12 +92,150 @@
     height: 100vh;
 }
 
-#intro {
-    background-color: bisque;
+/* 화면 하단에 고정되는 footer */
+#footer-fixed {
+    position: fixed;
+    left: 5vw;
+    bottom: 7vh;
+    z-index: 999;
 }
 
+#footer-fixed .github-link {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-image: url('./style-assets/images/github.png');
+    margin-bottom: 3vh;
+    opacity: .4;
+}
+
+#footer-fixed p {
+    font-size: 13px;
+    font-family: 'Pretendard-Light';
+    letter-spacing: 0.5px;
+    color: #888;
+}
+
+/* intro section */
+#intro {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#intro .center-title h1 {
+    width: 250px;
+    display: inline-block;
+    font-size: 85px;
+    line-height: 80px;
+    letter-spacing: -1px;
+    font-family: 'GmarketSansBold';
+}
+#intro .center-title h1 span {
+    font-size: 70px;
+    font-family: 'GmarketSansBold';
+}
+
+#intro .center-title .greeting-ment {
+    font-size: 1.2rem;
+    letter-spacing: -0.2px;
+}
+
+/* 라이트모드 & 다크모드 버튼 */
+#intro .light-dark-mode {
+    position: absolute;
+    top: 60.5vh;
+    right: 16vw;
+    width: 35px;
+    height: 90px;
+    border-radius: 35px;
+    background-color: #FF9922;
+    display: flex;
+    justify-content: center;
+    transition: .5s ease;
+}
+#intro .light-dark-mode .mode-btn {
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    background-color: #fff;
+    margin-top: 5px;
+    position: relative;
+}
+#intro .light-dark-mode .mode-btn::before {
+    content: '';
+    border-left: 1px solid #D9D9D9;
+    position: absolute;
+    top: -100vh;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 100vh;
+}
+
+/* intro에 고정된 메인 도형 */
+.signature-shape {
+    position: absolute;
+    top: 50vh;
+    left: -15vh;
+    width: 60vh;
+    height: 60vh;
+    animation: rotate-shape 20s linear infinite;
+    transition: .2s ease-in;
+}
+.signature-shape .line {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 1.5px;
+    background-color: #FF9922;
+    transform-origin: center;
+}
+.signature-shape .line-1 {
+    transform: rotate(90deg);
+}
+.signature-shape .line-2 {
+    transform: rotate(105deg);
+}
+.signature-shape .line-3 {
+    transform: rotate(120deg);
+}
+.signature-shape .line-4 {
+    transform: rotate(135deg);
+}
+.signature-shape .line-5 {
+    transform: rotate(150deg);
+}
+.signature-shape .line-6 {
+    transform: rotate(165deg);
+}
+.signature-shape .line-7 {
+    height: 2px;
+    transform: rotate(0deg);
+}
+.signature-shape .line-8 {
+    transform: rotate(-165deg);
+}
+.signature-shape .line-9 {
+    transform: rotate(-150deg);
+}
+.signature-shape .line-10 {
+    transform: rotate(-135deg);
+}
+.signature-shape .line-11 {
+    transform: rotate(-120deg);
+}
+.signature-shape .line-12 {
+    transform: rotate(-105deg);
+}
+
+
 #about {
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
 }
 
 #project {

@@ -1,1 +1,33 @@
+@charset 'utf-8';
 @import url(common.css);
+
+@media screen and (max-width: 1024px) {
+
+    /* 헤더 전화번호 / 이메일 */
+    #header .header-left .info {
+        position: absolute;
+        top: 50%;
+        left: 23vw;
+        transform: translate(0, -50%);
+        width: 20vh;
+        line-height: 1rem;
+        flex-wrap: wrap;
+    }
+    #header .header-left .info span {
+        display: none;
+    }
+
+    /* 헤더 시간 */
+    #header .time-check {
+        opacity: 0;
+        transition: .1s;
+    }
+
+    /* intro section */
+
+    /* 라이트모드 & 다크모드 버튼 */
+    #intro .light-dark-mode {
+        top: 65vh;
+        right: 10vw;
+    }
+}

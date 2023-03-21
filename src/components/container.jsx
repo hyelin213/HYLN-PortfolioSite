@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "./header";
+import FooterFixed from "./footerFixed";
 import Intro from "./intro";
 
 // swiper
@@ -15,6 +16,7 @@ export default function Container() {
         <>
             <div id="container">
                 <Header />
+                <FooterFixed />
                 <Swiper
                     id="contents-swiper"
                     direction="vertical"
