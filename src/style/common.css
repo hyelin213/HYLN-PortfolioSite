@@ -6,11 +6,14 @@
     padding: 0;
     box-sizing: border-box;
     word-break: keep-all;
-    font-family: 'GmarketSansMedium';
 }
 
 html {
     scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'GmarketSansMedium';
 }
 
 ul, li {
