@@ -31,7 +31,7 @@ export default function About() {
                             <svg className="prev" width="19" height="14" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M7.07 1L1 7.07L7.07 13.14M18 7.07H1.17" stroke="#E17B35" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
-                            <div>page</div>
+                            <div className="page-number"></div>
                             <svg className="next" width="19" height="14" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M11.93 1L18 7.07L11.93 13.14M1 7.07H17.83" stroke="#E17B35" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
@@ -43,16 +43,33 @@ export default function About() {
                         className="about-title"
                         pagination={{
                             type: "fraction",
+                            el: '.page-number'
                         }}
-                        navigation={true}
+                        navigation={{
+                            prevEl: '.prev',
+                            nextEl: '.next'
+                        }}
                         modules={[Pagination, Navigation]}
                     >
-                        <SwiperSlide>1</SwiperSlide>
+                        <SwiperSlide>
+                            <img src="/images/profile_pic.jpg" alt="프로필 사진" />
+                        </SwiperSlide>
                         <SwiperSlide>2</SwiperSlide>
                         <SwiperSlide>3</SwiperSlide>
                         <SwiperSlide>4</SwiperSlide>
                     </Swiper>
-                    <Swiper className="about-contents">
+                    <Swiper
+                        className="about-contents"
+                        pagination={{
+                            type: "fraction",
+                            el: '.page-number'
+                        }}
+                        navigation={{
+                            prevEl: '.prev',
+                            nextEl: '.next'
+                        }}
+                        modules={[Pagination, Navigation]}
+                    >
                         <SwiperSlide>1</SwiperSlide>
                         <SwiperSlide>2</SwiperSlide>
                         <SwiperSlide>3</SwiperSlide>
