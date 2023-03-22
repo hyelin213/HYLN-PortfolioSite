@@ -9,7 +9,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
-import SwiperCore, { Mousewheel, Pagination} from 'swiper';
+import SwiperCore, { Mousewheel, Pagination } from 'swiper';
 SwiperCore.use([Mousewheel, Pagination]);
 
 export default function Container() {
@@ -37,7 +37,6 @@ export default function Container() {
                     slidesPerView={'auto'}
                     spaceBetween={0}
                     mousewheel={true}
-                    style={{height: '100vh'}}
                 >
                     <SwiperSlide id="intro">
                         <Intro />

@@ -16,7 +16,8 @@ body {
     font-family: 'GmarketSansMedium';
 }
 
-ul, li {
+ul,
+li {
     list-style: none;
 }
 
@@ -30,9 +31,9 @@ img {
     vertical-align: middle;
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     display: none;
-}
+} */
 
 .pointer {
     position: absolute;
@@ -43,4 +44,8 @@ img {
     top: -10px;
     left: -10px;
     z-index: 1;
-  }
+}
+
+@media screen and (max-width: 1024px) {
+    .pointer { display: none; }
+}

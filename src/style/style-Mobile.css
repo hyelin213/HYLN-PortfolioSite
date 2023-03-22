@@ -2,11 +2,7 @@
 @import url(common.css);
 
 @media screen and (max-width: 480px) {
-
-    #about {
-        height: auto !important;
-    }
-
+ 
     .mobile-exposure {
         display: block;
     }
@@ -77,6 +73,11 @@
     }
 
     /* about section */
+
+    #about .about-scroll-option > .swiper-wrapper,
+    #about .about-scroll-option > .swiper-wrapper > .swiper-slide {
+        height: auto;
+    }
 
     #about .about-container {
         width: 83vw;
