@@ -336,6 +336,11 @@
     margin-left: 1.3rem;
 }
 
+#about .about-right .about-title .swiper-slide .title-1-pic {
+    width: 100%;
+    height: 100%;
+}
+
 #project {
     background-color: coral;
 }
