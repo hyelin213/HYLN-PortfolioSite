@@ -24,7 +24,7 @@ export default function About() {
                 freeMode={true}
                 scrollbar={true}
                 mousewheel={true}
-                speed={1000}
+                nested={true}
             >
                 <SwiperSlide>
                     <div className="about-container">

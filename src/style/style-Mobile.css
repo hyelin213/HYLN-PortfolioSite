@@ -74,6 +74,16 @@
 
     /* about section */
 
+    #about {
+        height: 100vh;
+        scroll-behavior: smooth;
+    }
+
+    #about .about-scroll-option > .swiper-wrapper {
+        scroll-snap-type: y mandatory;
+        scroll-behavior: smooth;
+    }
+
     #about .about-scroll-option > .swiper-wrapper,
     #about .about-scroll-option > .swiper-wrapper > .swiper-slide {
         height: auto;
