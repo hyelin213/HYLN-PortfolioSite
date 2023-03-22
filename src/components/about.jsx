@@ -53,7 +53,7 @@ export default function About() {
                         modules={[Pagination, Navigation]}
                     >
                         <SwiperSlide>
-                            <img className="title-1-pic" src="https://hyelin213.github.io/HYLN-PortfolioSite/images/profile_pic.png" alt="프로필 사진" />
+                            <img className="title-1-pic" src="https://hyelin213.github.io/HYLN-PortfolioSite/images/profile_pic.jpg" alt="프로필 사진" />
                         </SwiperSlide>
                         <SwiperSlide>2</SwiperSlide>
                         <SwiperSlide>3</SwiperSlide>
