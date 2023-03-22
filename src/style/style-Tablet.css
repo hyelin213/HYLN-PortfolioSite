@@ -41,13 +41,73 @@
     /* about section ** */
 
     #about .about-container {
+        width: 80vw;
         flex-direction: column;
+    }
+
+    #about .about-left {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 4vw;
+    }
+
+    #about .about-left .title {
+        display: flex;
+        align-items: flex-start;
+        margin-top: 0;
+    }
+    #about .about-left .title h2 {
+        font-size: 5vw;
+        font-weight: 500;
+        letter-spacing: -2.5px;
+    }
+    #about .about-left .title p {
+        font-size: 5vw;
+        font-weight: 500;
     }
 
     #about .about-left .introduction {
         width: 100%;
-        font-size: 1.3vw;
+        font-size: 2.5vw;
         letter-spacing: -0.5px;
-        margin-top: 20px;
+        margin-top: 0.9vw;
+    }
+
+    #about .about-left .keywords {
+        margin-top: 2vw;
+    }
+    #about .about-left .keywords p {
+        font-size: 1.2vw;
+        padding: 1.2vw 1.4vw 1.1vw;
+    }
+    #about .about-left .keywords p:not(:first-child) {
+        margin-left: 1.2vw;
+    }
+
+    #about .swiper-navigation {
+        width: 11vw;
+        height: 4vw;
+    }
+
+    #about .swiper-navigation .navi-btn {
+        margin-top: 1.5vw;
+    }
+
+    #about .swiper-navigation .navi-btn svg {
+        width: 5vw !important;
+    }
+
+    #about .swiper-navigation .page-number {
+        text-align: center;
+        letter-spacing: -0.15vw;
+        font-size: 1.5vw;
+        font-weight: 400;
+        color: #777;
+    }
+
+    #about .about-right .about-title, #about .about-right .about-contents  {
+        width: 39vw;
+        height: 50vw;
     }
 }

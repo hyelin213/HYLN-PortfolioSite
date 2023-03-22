@@ -29,3 +29,18 @@ img {
     border: 0;
     vertical-align: middle;
 }
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.pointer {
+    position: absolute;
+    background-color: #c4c4c44e;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    top: -10px;
+    left: -10px;
+    z-index: 1;
+  }

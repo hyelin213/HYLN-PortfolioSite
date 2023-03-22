@@ -3,6 +3,10 @@
 
 @media screen and (max-width: 480px) {
 
+    #about {
+        height: auto !important;
+    }
+
     .mobile-exposure {
         display: block;
     }
@@ -71,4 +75,64 @@
         height: 50vh;
         animation: rotate-shape 20s linear infinite;
     }
+
+    /* about section */
+
+    #about .about-container {
+        width: 83vw;
+        flex-direction: column;
+        padding: 15vh 0;
+    }
+
+    #about .about-left {
+        position: relative;
+    }
+    #about .about-left .title h2 {
+        font-size: 7vw;
+        font-weight: 500;
+        letter-spacing: -2px;
+    }
+    #about .about-left .title p {
+        font-size: 7vw;
+        font-weight: 500;
+    }
+
+    #about .about-left .introduction {
+        width: 100%;
+        font-size: 4vw;
+        letter-spacing: -0.5px;
+        margin-top: 0.9vw;
+    }
+
+    #about .about-left .keywords {
+        margin: 4vw 0 4vw;
+    }
+    #about .about-left .keywords p {
+        font-size: 2.6vw;
+        padding: 2.7vw 2.5vw 2.2vw;
+    }
+    #about .about-left .keywords p:not(:first-child) {
+        margin-left: 1.7vw;
+    }
+
+    #about .about-left .swiper-navigation {
+        position: absolute;
+        /* right: 0; */
+        /* bottom: -1020%; */
+    }
+
+    #about .about-right {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    #about .about-right .about-title, #about .about-right .about-contents  {
+        width: 100%;
+        height: 107vw;
+    }
+    #about .about-right .about-contents {
+        margin-left: 0;
+    }
+
 }
