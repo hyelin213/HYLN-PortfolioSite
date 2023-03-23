@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 // swiper
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -12,6 +12,7 @@ SwiperCore.use([Mousewheel]);
 
 export default function About() {
 
+    const [ url, setUrl ] = useState('https://hyelin213.github.io/HYLN-PortfolioSite');
     const keywords = ['신입', 'FE', '성장하는', '도전적인', '탐구심'];
 
     return (
@@ -41,7 +42,7 @@ export default function About() {
                                     {keywords.map(item => (<p>{item}</p>))}
                                 </div>
                             </div>
-                            <div className="swiper-navigation PC-exposure">
+                            <div className="swiper-navigation mobile-hide">
                                 <div className="navi-btn">
                                     <svg className="prev" width="19" height="14" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M7.07 1L1 7.07L7.07 13.14M18 7.07H1.17" stroke="#E17B35" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
@@ -69,9 +70,11 @@ export default function About() {
                                 modules={[Pagination, Navigation]}
                             >
                                 <SwiperSlide>
-                                    <img className="title-1-pic" src="https://hyelin213.github.io/HYLN-PortfolioSite/images/profile_pic.jpg" alt="프로필 사진" />
+                                    <img className="title-1-info" src={`${url}/images/profile_pic.jpg`} alt="프로필 사진" />
                                 </SwiperSlide>
-                                <SwiperSlide>2</SwiperSlide>
+                                <SwiperSlide className="title-2-skill">
+                                    <h3>Skills</h3>
+                                </SwiperSlide>
                                 <SwiperSlide>3</SwiperSlide>
                                 <SwiperSlide>4</SwiperSlide>
                             </Swiper>
@@ -87,7 +90,7 @@ export default function About() {
                                 }}
                                 modules={[Pagination, Navigation]}
                             >
-                                <SwiperSlide className="content-1">
+                                <SwiperSlide className="content-1-info">
                                     <div className="content-1-container">
                                         <h3>디자인에서<br />프론트엔드 개발까지.</h3>
                                         <p>
@@ -101,7 +104,27 @@ export default function About() {
                                         </p>
                                     </div>
                                 </SwiperSlide>
-                                <SwiperSlide>2</SwiperSlide>
+                                <SwiperSlide className="content-2-skill">
+                                    <div className="FE-skill">
+                                        <h3>FE Skills</h3>
+                                        <div className="icon">
+                                            {/* <img src={`${url}/images/profile_pic.jpg`} alt="프로필 사진" /> */}
+                                            <img src={`${url}/images/skill_icon/html_5.png`} alt="html_5.icon" />
+                                            <img src={`${url}/images/skill_icon/`} alt="" />
+                                            <img src={`${url}/images/skill_icon/`} alt="" />
+                                            <img src={`${url}/images/skill_icon/`} alt="" />
+                                        </div>
+                                    </div>
+                                    <div className="tool-skill">
+                                        <h3></h3>
+                                        <div className="icon">
+                                            <img src={`${url}/images/skill_icon/`} alt="" />
+                                            <img src={`${url}/images/skill_icon/`} alt="" />
+                                            <img src={`${url}/images/skill_icon/`} alt="" />
+                                            <img src={`${url}/images/skill_icon/`} alt="" />
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
                                 <SwiperSlide>3</SwiperSlide>
                                 <SwiperSlide>4</SwiperSlide>
                             </Swiper>

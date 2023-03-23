@@ -17,6 +17,7 @@
 }
 
 /* header */
+
 #header {
     width: 100%;
     height: 14.5vh; /* 140px */
@@ -346,24 +347,24 @@
     margin-left: 1.3rem;
 }
 
-#about .about-right .about-title .swiper-slide .title-1-pic {
+#about .about-right .about-title .swiper-slide .title-1-info {
     width: 100%;
     height: 100%;
 }
 
-#about .about-right .about-contents .content-1 {
+#about .about-right .about-contents .content-1-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-#about .about-right .about-contents .content-1 h3 {
+#about .about-right .about-contents .content-1-info h3 {
     font-size: 1.55vw;
     font-weight: 600;
     letter-spacing: -0.05vw;
 }
-#about .about-right .about-contents .content-1 p {
+#about .about-right .about-contents .content-1-info p {
     font-size: 0.85vw;
     margin-top: 1.3vw;
 }

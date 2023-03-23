@@ -6,6 +6,19 @@
     .mobile-exposure {
         display: block;
     }
+    .mobile-hide {
+        display: none;
+    }
+
+    /* header */
+
+    #header {
+        width: 100%;
+        height: 14.5vh; /* 140px */
+        height: 80px;
+        position: fixed;
+        z-index: 999;
+    }
 
     /* 헤더 시간 */
     #header .header-left .info {
@@ -144,6 +157,15 @@
     }
     #about .about-right .about-contents {
         margin-left: 0;
+    }
+
+    #about .about-right > .swiper-navigation {
+        width: 25vw;
+        height: 10vw;
+    }
+    #about .about-right > .swiper-navigation .navi-btn .page-number {
+        font-size: 3.5vw;
+        letter-spacing: -0.3vw;
     }
 
 }
