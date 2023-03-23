@@ -347,6 +347,8 @@
     margin-left: 1.3rem;
 }
 
+/* about-contents 1)info */
+
 #about .about-right .about-title .swiper-slide .title-1-info {
     width: 100%;
     height: 100%;
@@ -369,6 +371,24 @@
     margin-top: 1.3vw;
 }
 
+/* about-contents 2)skill */
+
+#about .about-right .about-contents .content-2-skill .icon {
+    width: 3vw;
+    height: 3vw;
+    display: flex;
+}
+#about .about-right .about-contents .content-2-skill .icon img {
+    width: 100%;
+    height: 100%;
+}
+
+/* about-contents 4)motto */
+
+#about .about-right .about-contents .title-4-motto h3 {
+    display: flex;
+    flex-direction: column;
+}
 
 #project {
     background-color: coral;

@@ -12,7 +12,7 @@ SwiperCore.use([Mousewheel]);
 
 export default function About() {
 
-    const [ url, setUrl ] = useState('https://hyelin213.github.io/HYLN-PortfolioSite');
+    const [url, setUrl] = useState('https://hyelin213.github.io/HYLN-PortfolioSite');
     const keywords = ['신입', 'FE', '성장하는', '도전적인', '탐구심'];
 
     return (
@@ -75,8 +75,20 @@ export default function About() {
                                 <SwiperSlide className="title-2-skill">
                                     <h3>Skills</h3>
                                 </SwiperSlide>
-                                <SwiperSlide>3</SwiperSlide>
-                                <SwiperSlide>4</SwiperSlide>
+                                <SwiperSlide className="title-3-aspi">
+                                    <h3 className="if-title">if</h3>
+                                    <p>became a<br />front-end developer</p>
+                                    <div className="parentheses">
+                                        <span className="left">{'('}</span>
+                                        <span className="right">{')'}</span>
+                                    </div>
+                                    <p className="brace">{'{...}'}</p>
+                                </SwiperSlide>
+                                <SwiperSlide className="title-4-motto">
+                                    <p className="make-the">Make the</p>
+                                    <p className="impossible">impossible</p>
+                                    <p className="possible">possible<span>:</span></p>
+                                </SwiperSlide>
                             </Swiper>
                             <Swiper
                                 className="about-contents"
@@ -108,25 +120,54 @@ export default function About() {
                                     <div className="FE-skill">
                                         <h3>FE Skills</h3>
                                         <div className="icon">
-                                            {/* <img src={`${url}/images/profile_pic.jpg`} alt="프로필 사진" /> */}
                                             <img src={`${url}/images/skill_icon/html_5.png`} alt="html_5.icon" />
-                                            <img src={`${url}/images/skill_icon/`} alt="" />
-                                            <img src={`${url}/images/skill_icon/`} alt="" />
-                                            <img src={`${url}/images/skill_icon/`} alt="" />
+                                            <img src={`${url}/images/skill_icon/css_3.png`} alt="css_3.icon" />
+                                            <img src={`${url}/images/skill_icon/js.png`} alt="js.icon" />
+                                            <img src={`${url}/images/skill_icon/atom.png`} alt="atom.icon" />
                                         </div>
                                     </div>
                                     <div className="tool-skill">
-                                        <h3></h3>
+                                        <h3>Tools Skills</h3>
                                         <div className="icon">
-                                            <img src={`${url}/images/skill_icon/`} alt="" />
-                                            <img src={`${url}/images/skill_icon/`} alt="" />
-                                            <img src={`${url}/images/skill_icon/`} alt="" />
-                                            <img src={`${url}/images/skill_icon/`} alt="" />
+                                            <img src={`${url}/images/skill_icon/github_color.png`} alt="github_color.icon" />
+                                            <img src={`${url}/images/skill_icon/figma.png`} alt="figma.icon" />
+                                            <img src={`${url}/images/skill_icon/illustrator.png`} alt="illustrator.icon" />
+                                            <img src={`${url}/images/skill_icon/photoshop.png`} alt="photoshop.icon" />
                                         </div>
                                     </div>
                                 </SwiperSlide>
-                                <SwiperSlide>3</SwiperSlide>
-                                <SwiperSlide>4</SwiperSlide>
+                                <SwiperSlide className="content-3-aspi">
+                                    <div className="content-3-container">
+                                        <p className="subtitle">const 저 = '성장 가능성이 있는 사람';</p>
+                                        <p className="content">
+                                            저는 상상한 것을 실현시키는 것을 좋아합니다.<br />
+                                            목표로 하는 것은 반드시 해내고자 하는 끈기가 있으며,<br />
+                                            시간은 조금 걸리지만 완성도를 높일 수 있는 섬세함을<br />
+                                            통하여 모두를 만족 시키는 사람이 되고 싶습니다.<br /><br />
+
+                                            저는 새로운 것을 배우는 것에 흥미를 느낍니다.<br />
+                                            프론트엔드 과정의 수업을 들을 때도 배우고자 하는<br />
+                                            성실한 자세로 임하여 우수한 성적으로 수료했습니다.<br /><br />
+
+                                            준비된 자에게 기회가 옵니다.<br />
+                                            아직은 부족하지만 끊임 없이 배우고 노력하여<br />
+                                            하루가 다르게 성장한 모습으로 자리를 지키겠습니다.
+                                        </p>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide className="content-4-motto">
+                                    <p>
+                                        <span>안 되면 되게 하라.</span><br />
+                                        누군가에겐 단순한 문장일 수 있습니다.<br />
+                                        하지만 저에게 있어 이 문장은 좌우명이 되었을<br />
+                                        정도로 마음 가짐에 큰 변화를 주었습니다.<br /><br />
+
+                                        매사에 걱정이 많았던 저는,<br />
+                                        이제 눈 앞에 큰 벽이 있더라도 넘어설 수 있다는<br />
+                                        자신감을 가지고 한계를 뛰어 넘고자 하는 사람이<br />
+                                        되었습니다.
+                                    </p>
+                                </SwiperSlide>
                             </Swiper>
                             <div className="swiper-navigation mobile-exposure">
                                 <div className="navi-btn">
