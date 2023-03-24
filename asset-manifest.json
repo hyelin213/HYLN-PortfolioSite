@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/HYLN-PortfolioSite/static/css/main.03c3878b.css",
+    "main.css": "/HYLN-PortfolioSite/static/css/main.b52cbbd5.css",
     "main.js": "/HYLN-PortfolioSite/static/js/main.95aeb588.js",
     "static/js/787.37faa4c4.chunk.js": "/HYLN-PortfolioSite/static/js/787.37faa4c4.chunk.js",
     "index.html": "/HYLN-PortfolioSite/index.html",
-    "main.03c3878b.css.map": "/HYLN-PortfolioSite/static/css/main.03c3878b.css.map",
+    "main.b52cbbd5.css.map": "/HYLN-PortfolioSite/static/css/main.b52cbbd5.css.map",
     "main.95aeb588.js.map": "/HYLN-PortfolioSite/static/js/main.95aeb588.js.map",
     "787.37faa4c4.chunk.js.map": "/HYLN-PortfolioSite/static/js/787.37faa4c4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.03c3878b.css",
+    "static/css/main.b52cbbd5.css",
     "static/js/main.95aeb588.js"
   ]
 }
