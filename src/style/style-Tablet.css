@@ -110,4 +110,97 @@
         width: 39vw;
         height: 50vw;
     }
+
+    /* about-1)info */
+
+    #about .about-right .about-contents .content-1-info h3 {
+        font-size: 2.92vw;
+    }
+    #about .about-right .about-contents .content-1-info p {
+        font-size: 1.5vw;
+        line-height: 2.4vw;
+        margin-top: 2.8vw;
+    }
+
+    /* about-2)skill */
+
+    #about .about-right .about-title .title-2-skill {
+        padding-left: 4vw;
+    }
+
+    #about .about-right .about-title .title-2-skill h3 {
+        font-size: 9.76vw;
+        letter-spacing: -0.25vw;
+    }
+
+    #about .about-right .about-contents .content-2-skill h3 {
+        font-size: 2.92vw;
+    }
+
+    #about .about-right .about-contents .content-2-skill .tool-skill {
+        margin-top: 6vw;
+    }
+
+    #about .about-right .about-contents .content-2-skill .icon {
+        height: 4.9vw;
+        margin-top: 2.8vw;
+    }
+    #about .about-right .about-contents .content-2-skill .icon img:not(:last-child) {
+        margin-right: 1.9vw;
+    }
+
+    /* about-3)aspirations */
+
+    #about .about-right .about-title .title-3-aspi .title-3-container {
+        margin-bottom: 5.66vw;
+    }
+
+    #about .about-right .about-title .title-3-aspi .if-title {
+        font-size: 14.64vw;
+        letter-spacing: -0.35vw;
+        margin-left: -0.5vw;
+    }
+
+    #about .about-right .about-title .title-3-aspi .if-branch-text {
+        font-size: 2.75vw;
+        font-weight: 500;
+        letter-spacing: -0.03vw;
+    }
+
+    #about .about-right .about-title .title-3-aspi .parentheses {
+        font-size: 3.9vw;
+        color: #9B9B9B;
+        bottom: 14.6vw;
+    }
+    #about .about-right .about-title .title-3-aspi .parentheses .space {
+        width: 29vw;
+    }
+
+    #about .about-right .about-title .title-3-aspi .brace {
+        font-size: 3.9vw;
+        bottom: 3.9vw;
+        right: 3.9vw;
+    }
+
+    #about .about-right .about-contents .content-3-aspi .subtitle {
+        font-size: 1.6vw;
+        margin-bottom: 3.4vw;
+    }
+    #about .about-right .about-contents .content-3-aspi .content {
+        font-size: 1.4vw;
+        line-height: 2.4vw;
+    }
+
+    /* about-4)motto */
+
+    #about .about-right .about-title .title-4-motto p {
+        font-size: 5.1vw;
+        letter-spacing: -0.1vw;
+    }
+
+    #about .about-right .about-contents .content-4-motto p {
+        font-size: 1.4vw;
+        line-height: 2.4vw;
+    }
+
 }

@@ -76,18 +76,23 @@ export default function About() {
                                     <h3>Skills</h3>
                                 </SwiperSlide>
                                 <SwiperSlide className="title-3-aspi">
-                                    <h3 className="if-title">if</h3>
-                                    <p>became a<br />front-end developer</p>
+                                    <div className="title-3-container">
+                                        <h3 className="if-title">if</h3>
+                                        <p className="if-branch-text">became a<br />front-end developer</p>
+                                    </div>
                                     <div className="parentheses">
                                         <span className="left">{'('}</span>
+                                        <div className="space"></div>
                                         <span className="right">{')'}</span>
                                     </div>
-                                    <p className="brace">{'{...}'}</p>
+                                    <p className="brace">{'{ ... }'}</p>
                                 </SwiperSlide>
                                 <SwiperSlide className="title-4-motto">
-                                    <p className="make-the">Make the</p>
-                                    <p className="impossible">impossible</p>
-                                    <p className="possible">possible<span>:</span></p>
+                                    <div className="title-4-container">
+                                        <p className="make-the">Make the</p>
+                                        <p className="impossible">impossible</p>
+                                        <p className="possible">possible<span> :</span></p>
+                                    </div>
                                 </SwiperSlide>
                             </Swiper>
                             <Swiper
@@ -110,29 +115,31 @@ export default function About() {
                                             웹 UI를 디자인하면서 ‘이런 기능은 어떻게 만들까?’<br />
                                             라는 호기심에서 시작해 프론트엔드 개발 영역까지<br />
                                             역량을 넓혀가고 있습니다.<br /><br />
-                                            호기심으로 시작된 저의 노력들이<br />
+
                                             함께하는 동료와 사용자들에게 편리함을 제공할 수<br />
-                                            있는 기반이 되었으면 합니다.<br />
+                                            있는 기반을 가진 사람이 되고 싶습니다.<br />
                                         </p>
                                     </div>
                                 </SwiperSlide>
                                 <SwiperSlide className="content-2-skill">
-                                    <div className="FE-skill">
-                                        <h3>FE Skills</h3>
-                                        <div className="icon">
-                                            <img src={`${url}/images/skill_icon/html_5.png`} alt="html_5.icon" />
-                                            <img src={`${url}/images/skill_icon/css_3.png`} alt="css_3.icon" />
-                                            <img src={`${url}/images/skill_icon/js.png`} alt="js.icon" />
-                                            <img src={`${url}/images/skill_icon/atom.png`} alt="atom.icon" />
+                                    <div className="content-2-container">
+                                        <div className="FE-skill">
+                                            <h3>FE Skills</h3>
+                                            <div className="icon">
+                                                <img src={`${url}/images/skill_icon/html_5.png`} alt="html_5.icon" />
+                                                <img src={`${url}/images/skill_icon/css_3.png`} alt="css_3.icon" />
+                                                <img src={`${url}/images/skill_icon/js.png`} alt="js.icon" />
+                                                <img src={`${url}/images/skill_icon/atom.png`} alt="atom.icon" />
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div className="tool-skill">
-                                        <h3>Tools Skills</h3>
-                                        <div className="icon">
-                                            <img src={`${url}/images/skill_icon/github_color.png`} alt="github_color.icon" />
-                                            <img src={`${url}/images/skill_icon/figma.png`} alt="figma.icon" />
-                                            <img src={`${url}/images/skill_icon/illustrator.png`} alt="illustrator.icon" />
-                                            <img src={`${url}/images/skill_icon/photoshop.png`} alt="photoshop.icon" />
+                                        <div className="tool-skill">
+                                            <h3>Tools Skills</h3>
+                                            <div className="icon">
+                                                <img src={`${url}/images/skill_icon/github_color.png`} alt="github_color.icon" />
+                                                <img src={`${url}/images/skill_icon/figma.png`} alt="figma.icon" />
+                                                <img src={`${url}/images/skill_icon/illustrator.png`} alt="illustrator.icon" />
+                                                <img src={`${url}/images/skill_icon/photoshop.png`} alt="photoshop.icon" />
+                                            </div>
                                         </div>
                                     </div>
                                 </SwiperSlide>
@@ -149,7 +156,6 @@ export default function About() {
                                             프론트엔드 과정의 수업을 들을 때도 배우고자 하는<br />
                                             성실한 자세로 임하여 우수한 성적으로 수료했습니다.<br /><br />
 
-                                            준비된 자에게 기회가 옵니다.<br />
                                             아직은 부족하지만 끊임 없이 배우고 노력하여<br />
                                             하루가 다르게 성장한 모습으로 자리를 지키겠습니다.
                                         </p>
@@ -162,10 +168,9 @@ export default function About() {
                                         하지만 저에게 있어 이 문장은 좌우명이 되었을<br />
                                         정도로 마음 가짐에 큰 변화를 주었습니다.<br /><br />
 
-                                        매사에 걱정이 많았던 저는,<br />
-                                        이제 눈 앞에 큰 벽이 있더라도 넘어설 수 있다는<br />
+                                        눈 앞에 큰 벽이 있더라도 넘어설 수 있다는<br />
                                         자신감을 가지고 한계를 뛰어 넘고자 하는 사람이<br />
-                                        되었습니다.
+                                        되도록 노력하고 있습니다.
                                     </p>
                                 </SwiperSlide>
                             </Swiper>
