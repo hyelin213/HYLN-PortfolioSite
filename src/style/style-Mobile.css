@@ -20,6 +20,11 @@
         z-index: 999;
     }
 
+    #header .header-left .logo {
+        font-family: 'GmarketSansBold';
+        font-size: 20px;
+    }
+
     /* 헤더 시간 */
     #header .header-left .info {
         opacity: 0;

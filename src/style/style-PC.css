@@ -96,7 +96,7 @@
 #footer-fixed {
     position: fixed;
     left: 5vw;
-    bottom: 7vh;
+    bottom: 5vw;
     z-index: 999;
 }
 
@@ -402,6 +402,7 @@
 }
 
 #about .about-right .about-contents .content-2-skill .icon {
+    width: 100%;
     height: 3vw;
     margin-top: 1.5vw;
     display: flex;
