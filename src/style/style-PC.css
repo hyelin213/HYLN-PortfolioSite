@@ -389,6 +389,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 100%;
 }
 
 #about .about-right .about-contents .content-2-skill h3 {
