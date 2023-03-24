@@ -1,13 +1,16 @@
 @charset 'utf-8';
-@import url(common.css); /* 공동 style */
+@import url(common.css);
+/* 공동 style */
 
-@keyframes rotate-shape{
+@keyframes rotate-shape {
     100% {
         transform: rotate(360deg);
     }
 }
 
-.tablet-exposure, .mobile-exposure {
+
+.tablet-exposure,
+.mobile-exposure {
     display: none;
 }
 
@@ -16,14 +19,16 @@
     height: 100%;
 }
 
-/* header */
+/* header =========== Start Line ====================================== */
 
 #header {
     width: 100%;
-    height: 14.5vh; /* 140px */
+    height: 14.5vh;
+    /* 140px */
     position: fixed;
     z-index: 999;
 }
+
 #header .header-container {
     width: 90vw;
     height: 100%;
@@ -38,17 +43,19 @@
     display: flex;
     position: relative;
 }
+
 #header .header-left .logo {
     font-family: 'GmarketSansBold';
     font-size: 30px;
 }
+
 #header .header-left .info {
     position: absolute;
     top: 50%;
     left: 12vw;
     transform: translate(0, -50%);
     width: 20vw;
-    
+
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -56,6 +63,7 @@
     font-size: 0.7rem;
     font-family: 'GmarketSansLight';
 }
+
 #header .header-left .info span {
     margin: 0 1vw;
 }
@@ -80,6 +88,7 @@
     cursor: pointer;
     margin-left: 72.56px;
 }
+
 #header .menu-btn span {
     display: inline-block;
     width: 25px;
@@ -92,7 +101,9 @@
     height: 100vh;
 }
 
-/* 화면 하단에 고정되는 footer */
+/* header ======================================= End Line ========== */
+
+/* footer-fixed =========== Start Line ====================================== */
 #footer-fixed {
     position: fixed;
     left: 5vw;
@@ -116,7 +127,9 @@
     color: #888;
 }
 
-/* intro section */
+/* footer-fixed ====================================== End Line ===========*/
+
+/* intro section =========== Start Line ====================================== */
 #intro {
     width: 100%;
     height: 100%;
@@ -140,6 +153,7 @@
     letter-spacing: -1px;
     font-family: 'GmarketSansBold';
 }
+
 #intro .center-title h1 span {
     font-size: 70px;
     font-family: 'GmarketSansBold';
@@ -163,6 +177,7 @@
     justify-content: center;
     transition: 1s ease;
 }
+
 #intro .light-dark-mode .mode-btn {
     width: 25px;
     height: 25px;
@@ -171,6 +186,7 @@
     margin-top: 5px;
     position: relative;
 }
+
 #intro .light-dark-mode .mode-btn::before {
     content: '';
     border-left: 1px solid #D9D9D9;
@@ -182,7 +198,7 @@
 }
 
 /* intro에 고정된 메인 도형 */
-.signature-shape {
+#intro .signature-shape {
     position: absolute;
     top: 50vh;
     left: -15vh;
@@ -192,6 +208,7 @@
     animation: rotate-shape 20s linear infinite;
     transition: .2s ease-in;
 }
+
 .signature-shape .line {
     position: absolute;
     top: 50%;
@@ -200,45 +217,59 @@
     background-color: #FF9922;
     transform-origin: center;
 }
+
 .signature-shape .line-1 {
     transform: rotate(90deg);
 }
+
 .signature-shape .line-2 {
     transform: rotate(105deg);
 }
+
 .signature-shape .line-3 {
     transform: rotate(120deg);
 }
+
 .signature-shape .line-4 {
     transform: rotate(135deg);
 }
+
 .signature-shape .line-5 {
     transform: rotate(150deg);
 }
+
 .signature-shape .line-6 {
     transform: rotate(165deg);
 }
+
 .signature-shape .line-7 {
     height: 2px;
     transform: rotate(0deg);
 }
+
 .signature-shape .line-8 {
     transform: rotate(-165deg);
 }
+
 .signature-shape .line-9 {
     transform: rotate(-150deg);
 }
+
 .signature-shape .line-10 {
     transform: rotate(-135deg);
 }
+
 .signature-shape .line-11 {
     transform: rotate(-120deg);
 }
+
 .signature-shape .line-12 {
     transform: rotate(-105deg);
 }
 
+/* intro section ======================================= End Line ========== */
 
+/* about section =========== Start Line ====================================== */
 #about {
     width: 100%;
     height: 100%;
@@ -252,7 +283,8 @@
     width: 100%;
     height: 100%;
 }
-#about .about-scroll-option > .swiper-wrapper > .swiper-slide {
+
+#about .about-scroll-option>.swiper-wrapper>.swiper-slide {
     display: flex;
     align-items: center;
 }
@@ -269,11 +301,13 @@
     align-items: flex-start;
     margin-top: -13px;
 }
+
 #about .about-left .title h2 {
     font-size: 2.65vw;
     font-weight: 500;
     letter-spacing: -2px;
 }
+
 #about .about-left .title p {
     font-size: 2.65vw;
     font-weight: 500;
@@ -293,6 +327,7 @@
     font-weight: 700;
     margin-top: 30px;
 }
+
 #about .about-left .keywords p {
     font-size: 0.6vw;
     line-height: 0.6vw;
@@ -301,6 +336,7 @@
     border-radius: 100px;
     color: #F97904;
 }
+
 #about .about-left .keywords p:not(:first-child) {
     margin-left: 0.6vw;
 }
@@ -309,6 +345,7 @@
     width: 6.5vw;
     height: 2vw;
 }
+
 #about .swiper-navigation .navi-btn {
     width: 100%;
     height: 100%;
@@ -317,6 +354,7 @@
     justify-content: space-between;
     align-items: center;
 }
+
 #about .swiper-navigation .navi-btn svg {
     cursor: pointer;
 }
@@ -334,7 +372,8 @@
     display: flex;
 }
 
-#about .about-right .about-title, #about .about-right .about-contents  {
+#about .about-right .about-title,
+#about .about-right .about-contents {
     width: 22vw;
     height: 29vw;
     /* width: 430px;
@@ -366,6 +405,7 @@
     font-weight: 600;
     letter-spacing: -0.05vw;
 }
+
 #about .about-right .about-contents .content-1-info p {
     font-size: 0.85vw;
     line-height: 1.4vw;
@@ -379,6 +419,7 @@
     align-items: center;
     padding-left: 2.6vw;
 }
+
 #about .about-right .about-title .title-2-skill h3 {
     font-size: 5.2vw;
     letter-spacing: -0.2vw;
@@ -409,10 +450,12 @@
     margin-top: 1.5vw;
     display: flex;
 }
+
 #about .about-right .about-contents .content-2-skill .icon img {
     width: 100%;
     height: 100%;
 }
+
 #about .about-right .about-contents .content-2-skill .icon img:not(:last-child) {
     margin-right: 1vw;
 }
@@ -455,6 +498,7 @@
     color: #9B9B9B;
     bottom: 8.85vw;
 }
+
 #about .about-right .about-title .title-3-aspi .parentheses .space {
     width: 16.8vw;
 }
@@ -478,6 +522,7 @@
     color: #9B9B9B;
     margin-bottom: 1.8vw;
 }
+
 #about .about-right .about-contents .content-3-aspi .content {
     font-size: 0.8vw;
     line-height: 1.33vw;
@@ -491,17 +536,21 @@
     justify-content: center;
     align-items: center;
 }
+
 #about .about-right .about-title .title-4-motto p {
     font-size: 3.1vw;
     font-weight: 500;
     letter-spacing: -0.07vw;
 }
+
 #about .about-right .about-title .title-4-motto p.impossible {
     color: #146FB0;
 }
+
 #about .about-right .about-title .title-4-motto p.possible {
     color: #DF6106;
 }
+
 #about .about-right .about-title .title-4-motto p.possible span {
     color: #000;
 }
@@ -511,18 +560,48 @@
     justify-content: center;
     align-items: center;
 }
+
 #about .about-right .about-contents .content-4-motto p {
     font-size: 0.8vw;
     line-height: 1.33vw;
 }
+
 #about .about-right .about-contents .content-4-motto p span {
     font-weight: 600;
 }
 
+/* about section ======================================= End Line ========== */
+
+/* project section =========== Start Line ====================================== */
 #project {
-    background-color: coral;
+    background-color: transparent;
+    position: relative;
 }
 
-#contact {
-    background-color: thistle;
+#project .signature-shape {
+    position: absolute;
+    top: 1.14vw;
+    left: 11.87vw;
+    z-index: 0;
+    width: 30vh;
+    height: 30vh;
 }
+
+#project .signature-shape .line {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+    background-color: #FF9922;
+}
+
+
+
+/* project section ======================================= End Line ========== */
+
+/* contact section =========== Start Line ====================================== */
+#contact {
+    background-image: url('./style-assets/images/contact-bg.png');
+}
+
+/* contact section ======================================= End Line ========== */

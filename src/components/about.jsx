@@ -170,7 +170,7 @@ export default function About() {
 
                                         눈 앞에 큰 벽이 있더라도 넘어설 수 있다는<br />
                                         자신감을 가지고 한계를 뛰어 넘고자 하는 사람이<br />
-                                        되도록 노력하고 있습니다.
+                                        되도록 노력하겠습니다.
                                     </p>
                                 </SwiperSlide>
                             </Swiper>

@@ -3,6 +3,7 @@ import Header from "./header";
 import FooterFixed from "./footerFixed";
 import Intro from "./intro";
 import About from "./about";
+import Project from "./project";
 
 // swiper
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -45,6 +46,7 @@ export default function Container() {
                         <About />
                     </SwiperSlide>
                     <SwiperSlide id="project">
+                        <Project />
                     </SwiperSlide>
                     <SwiperSlide id="contact">
                     </SwiperSlide>
