@@ -31,9 +31,9 @@ img {
     vertical-align: middle;
 }
 
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
     display: none;
-} */
+}
 
 .pointer {
     position: absolute;
