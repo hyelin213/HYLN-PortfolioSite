@@ -8,6 +8,66 @@
     }
 }
 
+@keyframes textShake {
+    0%, 40% {
+        transform: rotate(0deg);
+    }
+    55%{
+        transform: rotate(-2deg);
+    }
+    60% {
+        transform: rotate(3deg);
+    }
+    70%, 100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes textJump {
+    0% {
+        transform: translateY(0);
+    }
+    20% {
+        transform: translateY(-0.6vw);
+    }
+    30% {
+        transform: translateY(0.2vw);
+    }
+    45% {
+        transform: translateY(-0.1vw);
+    }
+    60% {
+        transform: translateY(0.1vw);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes oooops {
+    0% {
+        opacity: 0;
+    }
+    20%, 60% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+:root {
+    --main-color: #F97904;
+    --sub-color: #FF9922;
+
+    --black-color: #222;
+    --grey-color: #888;
+    --grey-color2: #777;
+
+    --top-btn-color: rgba(255, 192, 72, 0.5);
+    --top-btn-hover-color: rgba(255, 192, 72, 0.8);
+}
+
 
 .tablet-exposure,
 .mobile-exposure {
@@ -21,17 +81,14 @@
 
 .top-btn {
     position: fixed;
-    bottom: 0 !important;
-    top: initial !important;
-    left: initial !important;
-    right: 0 !important;
-    transform: none !important;
+    bottom: 0;
+    right: 0;
     z-index: 999;
     width: 5.5vw;
     height: 5.5vw;
     border: 0;
     border-top-left-radius: 10px;
-    background-color: rgba(255, 192, 72, 0.5);
+    background-color: var(--top-btn-color);
     /* background-color: #FFC148; */
     display: flex;
     justify-content: center;
@@ -44,7 +101,7 @@
 }
 
 .top-btn:hover {
-    background-color: rgba(255, 192, 72, 1);
+    background-color: var(--top-btn-hover-color);
 }
 .top-btn:active {
     width: 5vw;
@@ -79,6 +136,7 @@
 #header .header-left .logo {
     font-family: 'GmarketSansBold';
     font-size: 30px;
+    color: var(--black-color);
 }
 
 #header .header-left .info {
@@ -103,6 +161,7 @@
 /* 헤더 시간 */
 #header .time-check {
     font-size: 20px;
+    color: var(--black-color);
 }
 
 /* 헤더 라이트모드 & 다크모드 버튼 */
@@ -125,7 +184,7 @@
     display: inline-block;
     width: 25px;
     height: 2px;
-    background-color: #000;
+    background-color: var(--black-color);
 }
 
 #contents-swiper {
@@ -139,7 +198,7 @@
 #footer-fixed {
     position: fixed;
     left: 5vw;
-    bottom: 5vw;
+    bottom: 4vw;
     z-index: 999;
 }
 
@@ -156,7 +215,7 @@
     font-size: 13px;
     font-family: 'Pretendard-Light';
     letter-spacing: 0.5px;
-    color: #888;
+    color: var(--grey-color);
 }
 
 /* footer-fixed ====================================== End Line ===========*/
@@ -208,6 +267,7 @@
     display: flex;
     justify-content: center;
     transition: 1s ease;
+    cursor: pointer;
 }
 
 #intro .light-dark-mode .mode-btn {
@@ -215,8 +275,8 @@
     height: 25px;
     border-radius: 25px;
     background-color: #fff;
-    margin-top: 5px;
     position: relative;
+    transition: all .2s ease;
 }
 
 #intro .light-dark-mode .mode-btn::before {
@@ -343,6 +403,24 @@
 #about .about-left .title p {
     font-size: 2.65vw;
     font-weight: 500;
+    transform-origin: bottom center;
+    cursor: pointer;
+    transform-origin: bottom center;
+}
+#about .about-left .title p.shake-text {
+    animation: textShake 2s linear infinite;
+}
+#about .about-left .title p.jump-text {
+    animation: textJump 0.9s ease;
+}
+
+#about .about-left .title span {
+    font-family: 'MYYeongnamnu';
+    color: var(--sub-color);
+    opacity: 0;
+}
+#about .about-left .title span.oooops {
+    animation: oooops 1.5s linear;
 }
 
 #about .about-left .introduction {
@@ -363,10 +441,10 @@
 #about .about-left .keywords p {
     font-size: 0.6vw;
     line-height: 0.6vw;
-    border: 1px solid #F97904;
+    border: 1px solid var(--main-color);
     padding: 0.55vw 0.65vw 0.4vw;
     border-radius: 100px;
-    color: #F97904;
+    color: var(--main-color);
 }
 
 #about .about-left .keywords p:not(:first-child) {
@@ -396,9 +474,8 @@
     letter-spacing: -0.1vw;
     font-size: 0.9vw;
     font-weight: 300;
-    color: #777;
+    color: var(--grey-color2);
 }
-
 
 #about .about-right {
     display: flex;
@@ -666,7 +743,7 @@
 
     width: 6.97vw;
     height: 2.34vw;
-    border: 1px solid #F97904;
+    border: 1px solid var(--main-color);
     border-radius: 10px;
     cursor: pointer;
 }

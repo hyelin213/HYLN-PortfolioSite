@@ -13,7 +13,17 @@ SwiperCore.use([Mousewheel]);
 export default function About() {
 
     const [url, setUrl] = useState('https://hyelin213.github.io/HYLN-PortfolioSite');
+    const [changeTxt, setChangeTxt] = useState('1');
+    const [clicked, setClicked] = useState(false);
     const keywords = ['신입', 'FE', '성장하는', '도전적인', '탐구심'];
+
+    function handleClick() {
+        setClicked(true);
+    }
+
+    function numberClick() {
+        setChangeTxt('!');
+    }
 
     return (
         <>
@@ -31,9 +41,18 @@ export default function About() {
                     <div className="about-container">
                         <div className="about-left">
                             <div className="about-title">
-                                <div className="title">
+                                <div className="title" onClick={handleClick}>
                                     <h2>안녕하세요</h2>
-                                    <p>1</p>
+                                    <p
+                                        className={clicked ? 'jump-text' : 'shake-text'}
+                                        onClick={() => {
+                                            // handleClick();
+                                            numberClick();
+                                        }}
+                                    >
+                                        {changeTxt}
+                                    </p>
+                                    <span className={clicked ? 'oooops' : ''}>oops!</span>
                                 </div>
                                 <div className="introduction">
                                     <p>Front-end 개발자를 꿈꾸고 있는 <br className="PC-exposure" />김혜린입니다.</p>

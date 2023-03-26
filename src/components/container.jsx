@@ -64,14 +64,18 @@ export default function Container() {
                     className="pointer"
                     style={{ transform: `translate(${xy.x}px, ${xy.y}px)` }}
                 ></div>
-                <button
-                    className="top-btn"
-                    onClick={() => goToIntro(0)}
-                >
-                    <svg width="0.9vw" height="1.35vw" viewBox="0 0 18 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M17.0934 9.76002L9.00007 1.66669L0.906738 9.76002M9.00007 24.3334V1.89335" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                </button>
+                {
+                    topBtn && (
+                    <button
+                        className="top-btn"
+                        onClick={() => goToIntro(0)}
+                    >
+                        <svg width="0.9vw" height="1.35vw" viewBox="0 0 18 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.0934 9.76002L9.00007 1.66669L0.906738 9.76002M9.00007 24.3334V1.89335" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    )
+                }
                 <Header />
                 <FooterFixed />
                 <Swiper

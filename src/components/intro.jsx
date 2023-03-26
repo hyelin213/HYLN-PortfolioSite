@@ -1,6 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function Intro() {
+
+    const [modeClick, setModeClick] = useState(5);
+
+    const handleClick = () => {
+        setModeClick(modeClick === 5 ? 60 : 5);
+    }
 
     return (
         <>
@@ -11,8 +17,11 @@ export default function Intro() {
                     <p>Enjoy it.</p>
                 </div>
             </div>
-            <div className="light-dark-mode">
-                <div className="mode-btn"></div>
+            <div className="light-dark-mode" onClick={handleClick}>
+                <div
+                    className="mode-btn"
+                    style={{ marginTop: `${modeClick}px` }}
+                ></div>
             </div>
             <div className="signature-shape">
                 <div className="line line-1"></div>
