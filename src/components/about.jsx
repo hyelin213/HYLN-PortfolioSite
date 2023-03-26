@@ -45,10 +45,7 @@ export default function About() {
                                     <h2>안녕하세요</h2>
                                     <p
                                         className={clicked ? 'jump-text' : 'shake-text'}
-                                        onClick={() => {
-                                            // handleClick();
-                                            numberClick();
-                                        }}
+                                        onClick={numberClick}
                                     >
                                         {changeTxt}
                                     </p>

@@ -94,13 +94,17 @@
     }
 
     /* intro에 고정된 메인 도형 */
-    .signature-shape {
+    #intro .signature-shape {
         position: absolute;
-        bottom: 0;
+        top: 55vh;
         left: -37vw;
-        width: 50vh;
-        height: 50vh;
+        width: 45vh;
+        height: 45vh;
         animation: rotate-shape 20s linear infinite;
+    }
+
+    #intro .signature-shape .line {
+        height: 1px;
     }
     /* intro section ======================================= End Line ========== */
 
@@ -281,6 +285,16 @@
     /* about section ======================================= End Line ========== */
 
     /* project section =========== Start Line ====================================== */
+    #project .signature-shape {
+        position: absolute;
+        top: 2.14vw;
+        left: calc(50% - 26vw);
+        z-index: 0;
+        width: 52vw;
+        height: 52vw;
+        animation: rotate-shape 20s linear infinite;
+        transition: .2s ease-in;
+    }
     /* project section ======================================= End Line ========== */
 
     /* contact section =========== Start Line ====================================== */

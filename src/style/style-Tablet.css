@@ -223,6 +223,16 @@
     
     
     /* project section =========== Start Line ====================================== */
+    #project .signature-shape {
+        position: absolute;
+        top: 2.14vw;
+        left: 9.76vw;
+        z-index: 0;
+        width: 30vh;
+        height: 30vh;
+        animation: rotate-shape 20s linear infinite;
+        transition: .2s ease-in;
+    }
     /* project section ======================================= End Line ========== */
 
     /* contact section =========== Start Line ====================================== */
