@@ -212,10 +212,11 @@
 }
 
 #footer-fixed p {
-    font-size: 13px;
-    font-family: 'Pretendard-Light';
-    letter-spacing: 0.5px;
+    font-size: 0.8vw;
+    font-weight: 300;
+    letter-spacing: -0.0vw;
     color: var(--grey-color);
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 /* footer-fixed ====================================== End Line ===========*/
