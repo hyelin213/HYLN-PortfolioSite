@@ -13,12 +13,12 @@
         transform: rotate(0deg);
     }
     55%{
-        transform: rotate(-2deg);
+        transform: rotate(-3deg);
     }
     60% {
-        transform: rotate(3deg);
+        transform: rotate(5deg);
     }
-    70%, 100% {
+    80%, 100% {
         transform: rotate(0deg);
     }
 }
@@ -46,9 +46,6 @@
 
 @keyframes oooops {
     0% {
-        opacity: 0;
-    }
-    20%, 60% {
         opacity: 1;
     }
     100% {
@@ -79,6 +76,7 @@
     height: 100%;
 }
 
+/* 최상단으로 가는 버튼 */
 .top-btn {
     position: fixed;
     bottom: 0;
@@ -106,6 +104,11 @@
 .top-btn:active {
     width: 5vw;
     height: 5vw;
+}
+
+.top-btn svg {
+    width: 0.9vw;
+    height: 1.35vw;
 }
 
 /* header =========== Start Line ====================================== */
@@ -409,19 +412,19 @@
     transform-origin: bottom center;
 }
 #about .about-left .title p.shake-text {
-    animation: textShake 2s linear infinite;
+    animation: textShake 1.7s linear infinite;
 }
 #about .about-left .title p.jump-text {
     animation: textJump 0.9s ease;
 }
 
 #about .about-left .title span {
-    font-family: 'MYYeongnamnu';
+    font-weight: 100;
     color: var(--sub-color);
     opacity: 0;
 }
 #about .about-left .title span.oooops {
-    animation: oooops 1.5s linear;
+    animation: oooops 1.2s linear;
 }
 
 #about .about-left .introduction {
@@ -737,7 +740,6 @@
 }
 
 #contact .chat-link {
-    /* padding: 10px 20px; */
     display: flex;
     justify-content: center;
     align-items: center;

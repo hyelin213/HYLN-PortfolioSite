@@ -10,6 +10,21 @@
         display: none;
     }
 
+    /* 최상단으로 가는 버튼 */
+    .top-btn {
+        width: 20vw;
+        height: 20vw;
+    }
+    .top-btn:active {
+        width: 19vw;
+        height: 19vw;
+    }
+
+    .top-btn svg {
+        width: 3.75vw;
+        height: 5.4vw;
+    }
+
     /* header */
 
     #header {
@@ -53,8 +68,7 @@
         margin-left: 25px;
     }
 
-    /* intro section */
-
+    /* intro section =========== Start Line ====================================== */
     /* 라이트모드 & 다크모드 버튼 */
     #intro .light-dark-mode {
         top: -50vh;
@@ -88,9 +102,9 @@
         height: 50vh;
         animation: rotate-shape 20s linear infinite;
     }
+    /* intro section ======================================= End Line ========== */
 
-    /* about section */
-
+    /* about section =========== Start Line ====================================== */
     #about {
         height: 100vh;
         scroll-behavior: smooth;
@@ -264,5 +278,38 @@
         font-size: 2.9vw;
         line-height: 4.6vw;
     }
+    /* about section ======================================= End Line ========== */
 
+    /* project section =========== Start Line ====================================== */
+    /* project section ======================================= End Line ========== */
+
+    /* contact section =========== Start Line ====================================== */
+    #contact .contact-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #contact h2 {
+        font-size: 9.79vw;
+        letter-spacing: -0.2vw;
+    }
+
+    #contact p {
+        font-size: 3.33vw;
+        margin: 1.4vw 0 10vw;
+    }
+
+    #contact .chat-link {
+        width: 27.9vw;
+        height: 9.37vw;
+    }
+    
+    #contact .chat-link span {
+        font-size: 3.54vw;
+    }
+    
+    #contact .chat-link svg {
+        margin-left: 2.08vw;
+    }
+    /* contact section ======================================= End Line ========== */
 }
