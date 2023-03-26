@@ -19,6 +19,38 @@
     height: 100%;
 }
 
+.top-btn {
+    position: fixed;
+    bottom: 0 !important;
+    top: initial !important;
+    left: initial !important;
+    right: 0 !important;
+    transform: none !important;
+    z-index: 999;
+    width: 5.5vw;
+    height: 5.5vw;
+    border: 0;
+    border-top-left-radius: 10px;
+    background-color: rgba(255, 192, 72, 0.5);
+    /* background-color: #FFC148; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s;
+    cursor: pointer;
+}
+#container > .swiper > .swiper-pagination {
+    display: none !important;
+}
+
+.top-btn:hover {
+    background-color: rgba(255, 192, 72, 1);
+}
+.top-btn:active {
+    width: 5vw;
+    height: 5vw;
+}
+
 /* header =========== Start Line ====================================== */
 
 #header {
@@ -585,23 +617,68 @@
     z-index: 0;
     width: 30vh;
     height: 30vh;
+    animation: rotate-shape 20s linear infinite;
+    transition: .2s ease-in;
 }
 
 #project .signature-shape .line {
-    position: absolute;
-    top: 50%;
-    width: 100%;
     height: 1px;
-    background-color: #FF9922;
 }
-
-
+#project .signature-shape .line-7 {
+    height: 0.5px;
+}
 
 /* project section ======================================= End Line ========== */
 
+
+
 /* contact section =========== Start Line ====================================== */
+
 #contact {
     background-image: url('./style-assets/images/contact-bg.png');
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    padding-left: 18vw;
+}
+
+#contact h2 {
+    font-size: 3.64vw;
+    font-family: 'GmarketSansLight';
+    font-weight: 100;
+    letter-spacing: -0.05vw;
+}
+
+#contact p {
+    font-size: 1.04vw;
+    font-weight: 100;
+    opacity: .65;
+    margin: 0.5vw 0 2.7vw;
+}
+
+#contact .chat-link {
+    /* padding: 10px 20px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 6.97vw;
+    height: 2.34vw;
+    border: 1px solid #F97904;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#contact .chat-link span {
+    color: #fff;
+    font-size: 0.88vw;
+    font-weight: 100;
+}
+
+#contact .chat-link svg {
+    margin-left: 0.5vw;
 }
 
 /* contact section ======================================= End Line ========== */
