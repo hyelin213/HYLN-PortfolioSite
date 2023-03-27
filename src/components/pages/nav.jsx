@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const list = [
     {title: 'HOGWARTS SCHOOL', link: 'HogwartsSchool'},
@@ -9,11 +11,16 @@ const list = [
 ]
 
 export default function Nav() {
+
+    useEffect(() => {
+        AOS.init();
+    })
+
     return (
         <nav>
             <ul>
-                {list.map(item => (
-                    <li><Link to={item.link}>{item.title}</Link></li>
+                {list.map((item, idx) => (
+                    <li className={`title-${idx+1}`}><Link to={item.link}>{item.title}</Link></li>
                 ))}
             </ul>
         </nav>        

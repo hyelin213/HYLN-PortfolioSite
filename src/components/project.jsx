@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import ProjectContents from "./pages/project-contents";
+import { BrowserRouter as Router } from "react-router-dom";
 
 export default function Project() {
 
@@ -19,7 +20,9 @@ export default function Project() {
                 <div className="line line-11"></div>
                 <div className="line line-12"></div>
             </div>
-            <ProjectContents />
+            <Router>
+                <ProjectContents />
+            </Router>
         </>
     );
 

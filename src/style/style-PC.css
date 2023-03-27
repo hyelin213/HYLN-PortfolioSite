@@ -9,16 +9,22 @@
 }
 
 @keyframes textShake {
-    0%, 40% {
+
+    0%,
+    40% {
         transform: rotate(0deg);
     }
-    55%{
+
+    55% {
         transform: rotate(-3deg);
     }
+
     60% {
         transform: rotate(5deg);
     }
-    80%, 100% {
+
+    80%,
+    100% {
         transform: rotate(0deg);
     }
 }
@@ -27,18 +33,23 @@
     0% {
         transform: translateY(0);
     }
+
     20% {
         transform: translateY(-0.6vw);
     }
+
     30% {
         transform: translateY(0.2vw);
     }
+
     45% {
         transform: translateY(-0.1vw);
     }
+
     60% {
         transform: translateY(0.1vw);
     }
+
     100% {
         transform: translateY(0);
     }
@@ -48,8 +59,20 @@
     0% {
         opacity: 1;
     }
+
     100% {
         opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    0%, 80% {
+        opacity: 0;
+        transform: translateX(5vw);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
     }
 }
 
@@ -94,13 +117,15 @@
     transition: all .2s;
     cursor: pointer;
 }
-#container > .swiper > .swiper-pagination {
+
+#container>.swiper>.swiper-pagination {
     display: none !important;
 }
 
 .top-btn:hover {
     background-color: var(--top-btn-hover-color);
 }
+
 .top-btn:active {
     width: 5vw;
     height: 5vw;
@@ -411,9 +436,11 @@
     cursor: pointer;
     transform-origin: bottom center;
 }
+
 #about .about-left .title p.shake-text {
     animation: textShake 1.7s linear infinite;
 }
+
 #about .about-left .title p.jump-text {
     animation: textJump 0.9s ease;
 }
@@ -425,6 +452,7 @@
     color: var(--sub-color);
     opacity: 0;
 }
+
 #about .about-left .title span.oooops {
     animation: oooops 1.2s linear;
 }
@@ -691,7 +719,6 @@
 #project {
     background-color: transparent;
     position: relative;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -714,6 +741,62 @@
 
 #project .signature-shape .line-7 {
     height: 0.8px;
+}
+
+#project .project-list {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* 프로젝트 리스트 메뉴 애니메이션(fade 효과) */
+#project .project-list .title-1 {
+    animation: fadeIn 1.0s linear;
+}
+#project .project-list .title-2 {
+    animation: fadeIn 1.02s linear;
+}
+#project .project-list .title-3 {
+    animation: fadeIn 1.04s linear;
+}
+#project .project-list .title-4 {
+    animation: fadeIn 1.06s linear;
+}
+
+/* 전환 애니메이션 효과 */
+#project .right-enter {
+    transform: translateX(100%);
+}
+
+#project .right-enter-active {
+    transform: translateX(0);
+    transition: transform .6s ease-in-out;
+}
+
+#project .right-exit {
+    transform: translateX(0);
+}
+
+#project .right-exit-active {
+    transform: translateX(-100%);
+    transition: transform .6s ease-in-out;
+}
+
+#project .left-enter {
+    transform: translateX(-100%);
+}
+
+#project .left-enter-active {
+    transform: translateX(0);
+    transition: transform .5s ease-in-out;
+}
+
+#project .left-exit {
+    transform: translateX(0);
+}
+
+#project .left-exit-active {
+    transform: translateX(100%);
+    transition: transform .5s ease-in-out;
 }
 
 
