@@ -39,6 +39,11 @@
         font-size: 20px;
     }
 
+    #header .header-right {
+        display: flex;
+        align-items: center;
+    }
+
     /* 헤더 시간 */
     #header .header-left .info {
         opacity: 0;
@@ -111,7 +116,6 @@
     /* about section =========== Start Line ====================================== */
     #about {
         height: 100vh;
-        scroll-behavior: smooth;
     }
 
     #about .about-scroll-option > .swiper-wrapper {

@@ -101,9 +101,15 @@ export default function Container() {
                         <About />
                     </SwiperSlide>
                     <SwiperSlide id="project">
+                        <Waypoint
+                            onEnter={handleOtherEnter}
+                        />
                         <Project />
                     </SwiperSlide>
                     <SwiperSlide id="contact">
+                        <Waypoint
+                            onEnter={handleOtherEnter}
+                        />
                         <Contact />
                     </SwiperSlide>
                 </Swiper>

@@ -163,7 +163,7 @@
 
 /* 헤더 시간 */
 #header .time-check {
-    font-size: 20px;
+    font-size: 15px;
     color: var(--black-color);
 }
 
@@ -419,6 +419,8 @@
 }
 
 #about .about-left .title span {
+    display: inline-block;
+    font-size: 0.8vw;
     font-weight: 100;
     color: var(--sub-color);
     opacity: 0;
@@ -689,6 +691,10 @@
 #project {
     background-color: transparent;
     position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #project .signature-shape {
@@ -705,9 +711,11 @@
 #project .signature-shape .line {
     height: 1px;
 }
+
 #project .signature-shape .line-7 {
-    height: 0.5px;
+    height: 0.8px;
 }
+
 
 /* project section ======================================= End Line ========== */
 

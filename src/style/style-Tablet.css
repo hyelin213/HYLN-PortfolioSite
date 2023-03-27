@@ -41,8 +41,7 @@
 
     /* 헤더 시간 */
     #header .time-check {
-        opacity: 0;
-        transition: .1s;
+        display: none;
     }
 
     /* intro section =========== Start Line ====================================== */
@@ -57,9 +56,24 @@
 
     /* about section =========== Start Line ====================================== */
 
+    #about {
+        height: 100vh;
+    }
+
+    #about .about-scroll-option > .swiper-wrapper {
+        scroll-snap-type: y mandatory;
+        scroll-behavior: smooth;
+    }
+
+    #about .about-scroll-option > .swiper-wrapper,
+    #about .about-scroll-option > .swiper-wrapper > .swiper-slide {
+        height: auto;
+    }
+
     #about .about-container {
         width: 80vw;
         flex-direction: column;
+        padding: 15vh 0;
     }
 
     #about .about-left {
