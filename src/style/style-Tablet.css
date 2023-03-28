@@ -60,6 +60,11 @@
         height: 100vh;
     }
 
+    #about .about-scroll-option {
+        display: flex;
+        align-items: center;
+    }
+
     #about .about-scroll-option > .swiper-wrapper {
         scroll-snap-type: y mandatory;
         scroll-behavior: smooth;
@@ -114,6 +119,11 @@
     }
     #about .about-left .keywords p:not(:first-child) {
         margin-left: 1.2vw;
+    }
+
+    #about .about-left .title span {
+        font-size: 1.56vw;
+        margin-top: 1vw;
     }
 
     #about .swiper-navigation {
@@ -237,6 +247,17 @@
     
     
     /* project section =========== Start Line ====================================== */
+
+    #project .project-scroll-option > .swiper-wrapper {
+        scroll-snap-type: y mandatory;
+        scroll-behavior: smooth;
+    }
+
+    #project .project-scroll-option > .swiper-wrapper,
+    #project .project-scroll-option > .swiper-wrapper > .swiper-slide {
+        height: auto;
+    }
+
     #project .signature-shape {
         position: absolute;
         top: 2.14vw;
@@ -247,6 +268,32 @@
         animation: rotate-shape 20s linear infinite;
         transition: .2s ease-in;
     }
+
+    #project .project-contents .project-list {
+        justify-content: center;
+        /* height: initial; */
+    }
+
+    #project .project-contents nav {
+        width: 100%;
+        height: 54.3vw;
+        margin-top: 41.5vh;
+        margin-bottom: 23vh;
+    }
+
+    #project .project-contents nav ul li {
+        height: 13.57vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #project .project-contents nav .title {
+        font-size: 4.88vw;
+        letter-spacing: -0.1vw;
+        border-bottom: 2px solid var(--sub-color);
+    }
+
     /* project section ======================================= End Line ========== */
 
     /* contact section =========== Start Line ====================================== */

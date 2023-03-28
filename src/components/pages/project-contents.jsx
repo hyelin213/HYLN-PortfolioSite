@@ -28,19 +28,19 @@ export default function ProjectContents() {
 
     return (
         <TransitionGroup
-            className="project-list"
+            className="project-contents"
         >
             <CSSTransition
                 key={location.pathname}
                 classNames={slideDirection}
-                timeout={700}
+                timeout={500}
             >
                 <Routes location={location}>
-                    <Route path={path} element={<Nav style={{ position: 'absolute' }} />} />
-                    <Route path={`${path}/HogwartsSchool`} element={<ProjectTeamFirst style={{ position: 'absolute' }} />} />
-                    <Route path={`${path}/Melon`} element={<ProjectTeamSecond style={{ position: 'absolute' }} />} />
-                    <Route path={`${path}/HWT`} element={<ProjectSingleFirst style={{ position: 'absolute' }} />} />
-                    <Route path={`${path}/portfolioSite`} element={<ProjectSingleSecond style={{ position: 'absolute' }} />} />
+                    <Route path={path} element={<Nav />} />
+                    <Route path={`${path}/HogwartsSchool`} element={<ProjectTeamFirst />} />
+                    <Route path={`${path}/Melon`} element={<ProjectTeamSecond />} />
+                    <Route path={`${path}/HWT`} element={<ProjectSingleFirst />} />
+                    <Route path={`${path}/portfolioSite`} element={<ProjectSingleSecond />} />
                 </Routes>
             </CSSTransition>
         </TransitionGroup>

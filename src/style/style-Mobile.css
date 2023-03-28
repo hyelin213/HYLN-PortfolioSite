@@ -118,6 +118,10 @@
         height: 100vh;
     }
 
+    #about .about-scroll-option {
+        align-items: normal;
+    }
+
     #about .about-scroll-option > .swiper-wrapper {
         scroll-snap-type: y mandatory;
         scroll-behavior: smooth;
@@ -169,6 +173,11 @@
         position: absolute;
         /* right: 0; */
         /* bottom: -1020%; */
+    }
+
+    #about .about-left .title span {
+        font-size: 3vw;
+        margin-top: 1vw;
     }
 
     #about .about-right {
