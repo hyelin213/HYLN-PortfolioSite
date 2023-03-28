@@ -308,6 +308,20 @@
         animation: rotate-shape 20s linear infinite;
         transition: .2s ease-in;
     }
+
+    #project .project-contents nav {
+        width: 100%;
+        margin-top: 58.3vw;
+        margin-bottom: 20vw;
+    }
+
+    #project .project-contents nav .title {
+        font-size: 6.25vw; /*30px*/
+        height: 28.95vw;
+    }
+
+
+
     /* project section ======================================= End Line ========== */
 
     /* contact section =========== Start Line ====================================== */

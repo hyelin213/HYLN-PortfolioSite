@@ -772,25 +772,18 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    background-color: #DF6106;
 }
 
 /* @media screen and (min-width: 1025px) {
 } */
-#project .project-contents nav {
-    width: 62.5vw;
-    height: 28.95vw;
-}
+
 
 #project .project-contents nav ul {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-#project .project-contents nav ul li {
-    height: 7.24vw;
-    display: flex;
-    align-items: center;
 }
 
 #project .project-contents nav .title {
@@ -799,8 +792,13 @@
     font-family: 'GmarketSansLight';
     border-bottom: 2px solid var(--sub-color);
     color: var(--black-color);
+    height: 7.24vw;
+    display: flex;
+    align-items: center;
 }
 #project .project-contents nav .title a {
+    display: inline-block;
+    width: 62.5vw;
     transition: transform .2s ease;
 }
 #project .project-contents nav .title:hover a {
