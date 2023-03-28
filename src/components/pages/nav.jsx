@@ -17,7 +17,7 @@ export default function Nav() {
     })
 
     return (
-        <div className="project-list">
+        <div className="project-list" style={{position: 'absolute'}}>
             <nav>
                 <ul>
                     {list.map((item, idx) => (

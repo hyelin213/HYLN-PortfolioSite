@@ -728,7 +728,6 @@
 #project .project-scroll-option {
     width: 100%;
     height: 100%;
-    display: flex;
 }
 
 #project .signature-shape {
@@ -753,14 +752,20 @@
 #project .project-container {
     width: 100%;
     height: 100%;
-    display: flex;
-    align-items: center;
+    /* display: flex;
+    align-items: center; */
 }
 
 #project .project-contents {
     width: 100%;
     height: 100%;
     overflow: hidden;
+    position: relative;
+}
+
+#project .project-contents .project-detail {
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -772,36 +777,32 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background-color: #DF6106;
 }
 
-/* @media screen and (min-width: 1025px) {
-} */
-
-
-#project .project-contents nav ul {
+#project .project-contents .project-list nav ul {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-#project .project-contents nav .title {
+#project .project-contents .project-list nav .title {
     font-size: 3.125vw;
     letter-spacing: -0.1vw;
     font-family: 'GmarketSansLight';
     border-bottom: 2px solid var(--sub-color);
     color: var(--black-color);
     height: 7.24vw;
+    min-height: 6rem;
     display: flex;
     align-items: center;
 }
-#project .project-contents nav .title a {
+#project .project-contents .project-list nav .title a {
     display: inline-block;
     width: 62.5vw;
     transition: transform .2s ease;
 }
-#project .project-contents nav .title:hover a {
+#project .project-contents .project-list nav .title:hover a {
     transform: translateX(1vw);
 }
 
@@ -823,13 +824,13 @@
     animation: fadeIn 1.05s linear;
 }
 #project .project-contents .title-2 a {
-    animation: fadeIn 1.07s linear;
+    animation: fadeIn 1.15s linear;
 }
 #project .project-contents .title-3 a {
-    animation: fadeIn 1.09s linear;
+    animation: fadeIn 1.25s linear;
 }
 #project .project-contents .title-4 a {
-    animation: fadeIn 1.1s linear;
+    animation: fadeIn 1.35s linear;
 }
 
 /* 전환 애니메이션 효과 */
@@ -859,6 +860,7 @@
 
 #contact {
     background-image: url('./style-assets/images/contact-bg.png');
+    background-size: cover;
     font-family: 'Noto Sans KR', sans-serif;
     color: #fff;
 

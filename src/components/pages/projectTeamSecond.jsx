@@ -3,7 +3,9 @@ import React from "react";
 export default function ProjectTeamSecond() {
     return (
         <>
-            <p>Project MELON</p>
+            <div className="project-detail" style={{position: 'absolute'}}>
+                <p>Project MELON</p>
+            </div>
         </>
     )
 }

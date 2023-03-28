@@ -20,10 +20,6 @@ export default function ProjectContents() {
     const [path, setPath] = useState('/HYLN-PortfolioSite');
     const location = useLocation();
 
-    useEffect(() => {
-        console.log(location)
-    }, [location]);
-
     let slideDirection = 'right';
 
     return (

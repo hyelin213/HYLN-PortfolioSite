@@ -309,14 +309,28 @@
         transition: .2s ease-in;
     }
 
-    #project .project-contents nav {
+    #project .project-container {
         width: 100%;
-        margin-top: 58.3vw;
-        margin-bottom: 20vw;
+        height: 110vh;
     }
 
-    #project .project-contents nav .title {
-        font-size: 6.25vw; /*30px*/
+    #project .project-contents .project-list {
+        justify-content: center;
+        align-items: normal;
+    }
+
+    #project .project-contents .project-list nav {
+        width: 100%;
+        padding-top: 30vh;
+        padding-bottom: 0;
+    }
+
+    #project .project-contents .project-list nav ul {
+        justify-content: normal;
+    }
+
+    #project .project-contents .project-list nav .title {
+        font-size: 6.25vw;
         height: 28.95vw;
     }
 
