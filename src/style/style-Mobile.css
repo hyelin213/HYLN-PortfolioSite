@@ -309,9 +309,11 @@
         transition: .2s ease-in;
     }
 
-    #project .project-container {
-        width: 100%;
+    #project .project-contents {
         height: 110vh;
+    }
+    #project .project-contents.detail-size {
+        height: 146.5vh;
     }
 
     #project .project-contents .project-list {
@@ -335,8 +337,6 @@
         min-height: 4rem;
 
     }
-
-
 
     /* project section ======================================= End Line ========== */
 

@@ -8,23 +8,25 @@ import ProjectSingleFirst from "./projectSingleFirst";
 import ProjectSingleSecond from "./projectSingleSecond";
 
 import { Routes, Route } from "react-router-dom";
-import { useNavigate, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
-
-// import history from 'history';
-
-
 
 export default function ProjectContents() {
 
     const [path, setPath] = useState('/HYLN-PortfolioSite');
+    // const [height, setHeight] = useState('');
     const location = useLocation();
+
 
     let slideDirection = 'right';
 
     return (
         <TransitionGroup
-            className="project-contents"
+            className={
+                location.pathname === path ? 
+                'project-contents' : 
+                'project-contents detail-size'
+            }
         >
             <CSSTransition
                 key={location.pathname}

@@ -275,11 +275,6 @@
         height: auto;
     }
 
-    #project .project-container {
-        width: 100%;
-        height: 111.52vh;
-    }
-
     #project .signature-shape {
         position: absolute;
         top: 2.14vw;
@@ -289,6 +284,13 @@
         height: 30vh;
         animation: rotate-shape 20s linear infinite;
         transition: .2s ease-in;
+    }
+
+    #project .project-contents {
+        height: 111.52vh;
+    }
+    #project .project-contents.detail-size {
+        height: 130vh;
     }
 
     #project .project-contents .project-list {

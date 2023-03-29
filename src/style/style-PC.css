@@ -92,6 +92,7 @@
     --black-color: #222;
     --grey-color: #888;
     --grey-color2: #777;
+    --contetns-box-color: #F6F6F6;
 
     --top-btn-color: rgba(255, 192, 72, 0.5);
     --top-btn-hover-color: rgba(255, 192, 72, 0.8);
@@ -235,8 +236,8 @@
 #footer-fixed {
     position: fixed;
     left: 5vw;
-    bottom: 4vw;
-    z-index: 999;
+    bottom: 3vw;
+    z-index: 2;
 }
 
 #footer-fixed .github-link {
@@ -531,7 +532,7 @@
     /* width: 430px;
     height: 555px; */
     border-radius: 10px;
-    background-color: #F6F6F6;
+    background-color: var(--contetns-box-color);
 }
 
 #about .about-right .about-contents {
@@ -761,8 +762,6 @@
 #project .project-container {
     width: 100%;
     height: 100%;
-    /* display: flex;
-    align-items: center; */
 }
 
 #project .project-contents {
@@ -778,6 +777,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 5;
 }
 
 #project .project-contents .project-list {
@@ -860,6 +860,61 @@
     transform: translateX(-100%);
     transition: transform .5s ease-in-out;
     animation: fadeOut .5s ease;
+}
+
+/* project detail part ** */
+
+#project .project-detail .project-detail-container {
+    width: 70vw;
+    height: 28.95vw;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#project .project-detail .detail-left {
+    align-self: flex-end;
+}
+
+#project .project-detail .detail-left .project-class {
+    font-size: 0.93vw;
+    color: var(--grey-color2);
+    margin-bottom: 0.5vw;
+}
+#project .project-detail .detail-left .title {
+    font-size: 1.6vw;
+    font-weight: 500;
+    color: var(--black-color);
+    letter-spacing: -0.015vw;
+    margin-bottom: 1.04vw;
+}
+
+#project .project-detail .detail-left .duration-contribution {
+    display: flex;
+}
+#project .project-detail .detail-left .duration-contribution p {
+    font-size: 0.6vw;
+    line-height: 0.6vw;
+    border: 1px solid var(--main-color);
+    padding: 0.55vw 0.65vw 0.4vw;
+    border-radius: 100px;
+    color: var(--main-color);
+    font-family: 'GmarketSansMedium';
+}
+#project .project-detail .detail-left .duration-contribution p:not(:first-child) {
+    margin-left: 10px;
+}
+
+#project .project-detail .detail-left button {
+    border: none;
+    background-color: transparent;
+}
+
+#project .project-detail .detail-right .detail-view {
+    width: 46.3vw;
+    height: 28.95vw;
+    background-color: var(--contetns-box-color);
+    border-radius: 10px;
 }
 
 /* project section ======================================= End Line ========== */

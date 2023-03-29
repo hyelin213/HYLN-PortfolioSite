@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import ProjectContents from "./pages/project-contents";
 import { BrowserRouter as Router } from "react-router-dom";
 
@@ -40,11 +40,11 @@ export default function Project() {
                     <div className="line line-11"></div>
                     <div className="line line-12"></div>
                 </div>
-                <Router>
-                    <div className="project-container">
+                <div className="project-container">
+                    <Router>
                         <ProjectContents />
-                    </div>
-                </Router>
+                    </Router>
+                </div>
             </SwiperSlide>
         </Swiper>
     );
