@@ -332,6 +332,8 @@
     #project .project-contents .project-list nav .title {
         font-size: 6.25vw;
         height: 28.95vw;
+        min-height: 4.5rem;
+
     }
 
 

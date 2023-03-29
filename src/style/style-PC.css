@@ -75,6 +75,15 @@
         transform: translateX(0);
     }
 }
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
 
 :root {
     --main-color: #F97904;
@@ -850,6 +859,7 @@
 #project .right-exit-active {
     transform: translateX(-100%);
     transition: transform .5s ease-in-out;
+    animation: fadeOut .5s ease;
 }
 
 /* project section ======================================= End Line ========== */
