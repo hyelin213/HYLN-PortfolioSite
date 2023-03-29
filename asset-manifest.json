@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/HYLN-PortfolioSite/static/css/main.ba14eb29.css",
-    "main.js": "/HYLN-PortfolioSite/static/js/main.57913a08.js",
+    "main.css": "/HYLN-PortfolioSite/static/css/main.a593e4e2.css",
+    "main.js": "/HYLN-PortfolioSite/static/js/main.59265265.js",
     "static/js/787.37faa4c4.chunk.js": "/HYLN-PortfolioSite/static/js/787.37faa4c4.chunk.js",
     "static/media/contact-bg.png": "/HYLN-PortfolioSite/static/media/contact-bg.6b4f26fc0eeb2cd02617.png",
     "index.html": "/HYLN-PortfolioSite/index.html",
-    "main.ba14eb29.css.map": "/HYLN-PortfolioSite/static/css/main.ba14eb29.css.map",
-    "main.57913a08.js.map": "/HYLN-PortfolioSite/static/js/main.57913a08.js.map",
+    "main.a593e4e2.css.map": "/HYLN-PortfolioSite/static/css/main.a593e4e2.css.map",
+    "main.59265265.js.map": "/HYLN-PortfolioSite/static/js/main.59265265.js.map",
     "787.37faa4c4.chunk.js.map": "/HYLN-PortfolioSite/static/js/787.37faa4c4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ba14eb29.css",
-    "static/js/main.57913a08.js"
+    "static/css/main.a593e4e2.css",
+    "static/js/main.59265265.js"
   ]
 }
