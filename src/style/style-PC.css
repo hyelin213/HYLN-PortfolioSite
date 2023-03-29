@@ -891,6 +891,7 @@
 
 #project .project-detail .detail-left .duration-contribution {
     display: flex;
+    margin-bottom: 2.08vw;
 }
 #project .project-detail .detail-left .duration-contribution p {
     font-size: 0.6vw;
@@ -908,6 +909,7 @@
 #project .project-detail .detail-left button {
     border: none;
     background-color: transparent;
+    cursor: pointer;
 }
 
 #project .project-detail .detail-right .detail-view {
