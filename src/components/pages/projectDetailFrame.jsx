@@ -59,13 +59,19 @@ export default function ProjectDetailFrame({ title, projectClass, duration, cont
                                 language={['HTML5', 'SASS', 'JAVASCRIPT']}
                             />
                             <SwiperSlide>
-                                <img src={`${url}/images/project_contents/${viewName}/img_1.png`} alt="프로젝트 이미지1" />
+                                <div className="project-pic project-pic-1">
+                                    <img src={`${url}/images/project_contents/${viewName}/img_1.png`} alt="프로젝트 이미지1" />
+                                </div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={`${url}/images/project_contents/${viewName}/img_2.png`} alt="프로젝트 이미지2" />
+                                <div className="project-pic project-pic-2">
+                                    <img src={`${url}/images/project_contents/${viewName}/img_2.png`} alt="프로젝트 이미지2" />
+                                </div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={`${url}/images/project_contents/${viewName}/img_3.png`} alt="프로젝트 이미지3" />
+                                <div className="project-pic project-pic-3">
+                                    <img src={`${url}/images/project_contents/${viewName}/img_3.png`} alt="프로젝트 이미지3" />
+                                </div>
                             </SwiperSlide>
                         </Swiper>
                     </div>
