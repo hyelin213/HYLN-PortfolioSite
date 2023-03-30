@@ -8,7 +8,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/effect-coverflow";
 import SwiperCore, { Pagination, Navigation, FreeMode, Scrollbar, Mousewheel } from "swiper";
-SwiperCore.use([Mousewheel]);
+SwiperCore.use([Pagination, Navigation, FreeMode, Scrollbar, Mousewheel]);
 
 export default function About() {
 
@@ -30,7 +30,6 @@ export default function About() {
             <Swiper
                 className="about-scroll-option"
                 direction={"vertical"}
-                modules={[FreeMode, Scrollbar, Mousewheel]}
                 slidesPerView={"auto"}
                 freeMode={true}
                 scrollbar={true}
@@ -83,7 +82,6 @@ export default function About() {
                                     prevEl: '.prev',
                                     nextEl: '.next'
                                 }}
-                                modules={[Pagination, Navigation]}
                             >
                                 <SwiperSlide>
                                     <img className="title-1-info" src={`${url}/images/profile_pic.jpg`} alt="프로필 사진" />
@@ -113,6 +111,8 @@ export default function About() {
                             </Swiper>
                             <Swiper
                                 className="about-contents"
+                                slidesPerView={1}
+                                spaceBetween={10}
                                 pagination={{
                                     type: "fraction",
                                     el: '.page-number2'
@@ -121,7 +121,6 @@ export default function About() {
                                     prevEl: '.prev',
                                     nextEl: '.next'
                                 }}
-                                modules={[Pagination, Navigation]}
                             >
                                 <SwiperSlide className="content-1-info">
                                     <div className="content-1-container">

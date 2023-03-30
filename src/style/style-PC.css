@@ -910,6 +910,10 @@
     border: none;
     background-color: transparent;
     cursor: pointer;
+    transition: margin .2s;
+}
+#project .project-detail .detail-left button:hover {
+    margin-left: -0.5vw;
 }
 
 #project .project-detail .detail-right .detail-view {
