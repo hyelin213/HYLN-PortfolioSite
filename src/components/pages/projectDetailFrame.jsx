@@ -1,7 +1,8 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import sanitizeHTML from 'sanitize-html';
 
+// 프로젝트에 대한 설명 component
 import ProjectDetailAbout from "./projectDetailAbout";
 
 // swiper
@@ -20,7 +21,7 @@ export default function ProjectDetailFrame({ title, projectClass, duration, cont
     const navigate = useNavigate();
     const [url, setUrl] = useState('https://hyelin213.github.io/HYLN-PortfolioSite');
 
-    // XSS 방지를 위한 필터링
+    // XSS 방지를 위한 필터링 과정
     const contents = sanitizeHTML(
         `현실의 해리포터를 좋아하는 매니아층과 세계관 속 호그와트 학생 등,<br />
         관계자들을 타겟으로 한 교육 플랫폼 기반의 학교 사이트입니다.<br />
@@ -78,5 +79,6 @@ export default function ProjectDetailFrame({ title, projectClass, duration, cont
                 </div>
             </div>
         </>
-    )
+    );
+    
 }

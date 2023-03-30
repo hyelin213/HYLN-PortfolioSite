@@ -2,14 +2,17 @@
 @import url(common.css);
 
 @media screen and (max-width: 1024px) {
-
+    
+    /* 반응형에 따른 display 효과 */
     .PC-exposure {
         display: none;
     }
-
     .tablet-exposure {
         display: block;
     }
+    
+    
+    /*** ================================= Portfolio Site Contents ================================= ***/
 
     /* 최상단으로 가는 버튼 */
     .top-btn {
@@ -48,17 +51,16 @@
     }
 
     /* intro section =========== Start Line ====================================== */
-
     /* 라이트모드 & 다크모드 버튼 */
     #intro .light-dark-mode {
         top: 65vh;
         right: 10vw;
     }
-
     /* intro section ======================================= End Line ========== */
 
-    /* about section =========== Start Line ====================================== */
 
+    
+    /* about section =========== Start Line ====================================== */
     #about {
         height: 100vh;
     }
@@ -255,12 +257,11 @@
         font-size: 1.4vw;
         line-height: 2.4vw;
     }
-
     /* about section ======================================= End Line ========== */
 
 
-    /* project section =========== Start Line ====================================== */
 
+    /* project section =========== Start Line ====================================== */
     #project {
         height: 100vh;
     }
@@ -313,12 +314,11 @@
         width: 100%;
         text-align: center;
     }
-
-
     /* project section ======================================= End Line ========== */
 
-    /* contact section =========== Start Line ====================================== */
 
+
+    /* contact section =========== Start Line ====================================== */
     #contact h2 {
         font-size: 6.83vw;
     }
@@ -340,6 +340,5 @@
     #contact .chat-link svg {
         margin-left: 0.9vw;
     }
-
     /* contact section ======================================= End Line ========== */
 }

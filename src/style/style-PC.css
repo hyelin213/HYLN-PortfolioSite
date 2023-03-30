@@ -2,6 +2,7 @@
 @import url(common.css);
 /* 공동 style */
 
+/* 애니메이션 효과  */
 @keyframes rotate-shape {
     100% {
         transform: rotate(360deg);
@@ -66,25 +67,30 @@
 }
 
 @keyframes fadeIn {
-    0%, 80% {
+
+    0%,
+    80% {
         opacity: 0;
         transform: translateX(2vw);
     }
+
     100% {
         opacity: 1;
         transform: translateX(0);
     }
 }
+
 @keyframes fadeOut {
     0% {
         opacity: 1;
     }
+
     100% {
         opacity: 0;
     }
 }
 
-
+/* 주 색상 변수 선언 */
 :root {
     --main-color: #F97904;
     --sub-color: #FF9922;
@@ -99,15 +105,23 @@
     --top-btn-hover-color: rgba(255, 192, 72, 0.8);
 }
 
-
+/* 반응형에 따른 display 효과 */
 .tablet-exposure,
 .mobile-exposure {
     display: none;
 }
 
+
+/*** ================================= Portfolio Site Contents ================================= ***/
+
 #container {
     width: 100%;
     height: 100%;
+}
+
+/* 삭제 */
+#container>.swiper>.swiper-pagination {
+    display: none !important;
 }
 
 /* 최상단으로 가는 버튼 */
@@ -121,7 +135,6 @@
     border: 0;
     border-top-left-radius: 10px;
     background-color: var(--top-btn-color);
-    /* background-color: #FFC148; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -129,14 +142,9 @@
     cursor: pointer;
 }
 
-#container>.swiper>.swiper-pagination {
-    display: none !important;
-}
-
 .top-btn:hover {
     background-color: var(--top-btn-hover-color);
 }
-
 .top-btn:active {
     width: 5vw;
     height: 5vw;
@@ -148,7 +156,6 @@
 }
 
 /* header =========== Start Line ====================================== */
-
 #header {
     width: 100%;
     height: 14.5vh;
@@ -230,8 +237,9 @@
     width: 100%;
     height: 100vh;
 }
-
 /* header ======================================= End Line ========== */
+
+
 
 /* footer-fixed =========== Start Line ====================================== */
 #footer-fixed {
@@ -257,8 +265,9 @@
     color: var(--grey-color);
     font-family: 'Noto Sans KR', sans-serif;
 }
-
 /* footer-fixed ====================================== End Line ===========*/
+
+
 
 /* intro section =========== Start Line ====================================== */
 #intro {
@@ -398,8 +407,9 @@
 .signature-shape .line-12 {
     transform: rotate(-105deg);
 }
-
 /* intro section ======================================= End Line ========== */
+
+
 
 /* about section =========== Start Line ====================================== */
 #about {
@@ -445,7 +455,6 @@
     font-weight: 500;
     transform-origin: bottom center;
     cursor: pointer;
-    transform-origin: bottom center;
 }
 
 #about .about-left .title p.shake-text {
@@ -530,8 +539,6 @@
 #about .about-right .about-contents {
     width: 22vw;
     height: 29vw;
-    /* width: 430px;
-    height: 555px; */
     border-radius: 10px;
     background-color: var(--contents-box-color);
 }
@@ -682,7 +689,6 @@
     line-height: 1.33vw;
 }
 
-
 /* about-4)motto */
 
 #about .about-right .about-title .title-4-motto {
@@ -723,8 +729,9 @@
 #about .about-right .about-contents .content-4-motto p span {
     font-weight: 600;
 }
-
 /* about section ======================================= End Line ========== */
+
+
 
 /* project section =========== Start Line ====================================== */
 #project {
@@ -807,11 +814,13 @@
     display: flex;
     align-items: center;
 }
+
 #project .project-contents .project-list nav .title a {
     display: inline-block;
     width: 62.5vw;
     transition: transform .2s ease;
 }
+
 #project .project-contents .project-list nav .title:hover a {
     transform: translateX(1vw);
 }
@@ -820,12 +829,15 @@
 #project .project-contents .title-1 {
     animation: fadeIn 0.5s linear;
 }
+
 #project .project-contents .title-2 {
     animation: fadeIn 0.7s linear;
 }
+
 #project .project-contents .title-3 {
     animation: fadeIn 0.9s linear;
 }
+
 #project .project-contents .title-4 {
     animation: fadeIn 1s linear;
 }
@@ -833,12 +845,15 @@
 #project .project-contents .title-1 a {
     animation: fadeIn 1.05s linear;
 }
+
 #project .project-contents .title-2 a {
     animation: fadeIn 1.15s linear;
 }
+
 #project .project-contents .title-3 a {
     animation: fadeIn 1.25s linear;
 }
+
 #project .project-contents .title-4 a {
     animation: fadeIn 1.35s linear;
 }
@@ -875,6 +890,7 @@
 
 #project .project-detail .detail-left {
     align-self: flex-end;
+    animation: fadeIn .6s linear;
 }
 
 #project .project-detail .detail-left .project-class {
@@ -882,6 +898,7 @@
     color: var(--grey-color2);
     margin-bottom: 0.5vw;
 }
+
 #project .project-detail .detail-left .title {
     font-size: 1.6vw;
     font-weight: 500;
@@ -894,6 +911,7 @@
     display: flex;
     margin-bottom: 2.08vw;
 }
+
 #project .project-detail .detail-left .duration-contribution p {
     font-size: 0.6vw;
     font-weight: 700;
@@ -905,6 +923,7 @@
     color: var(--main-color);
     font-family: 'GmarketSansLight';
 }
+
 #project .project-detail .detail-left .duration-contribution p:not(:first-child) {
     margin-left: 10px;
 }
@@ -915,8 +934,13 @@
     cursor: pointer;
     transition: margin .2s;
 }
+
 #project .project-detail .detail-left button:hover {
     margin-left: -0.5vw;
+}
+
+#project .project-detail .detail-right {
+    animation: fadeIn .7s linear;
 }
 
 #project .project-detail .detail-right .detail-view {
@@ -925,6 +949,11 @@
     background-color: var(--contents-box-color);
     border-radius: 10px;
     position: relative;
+}
+
+#project .project-detail .detail-right .detail-view .swiper-button-prev,
+#project .project-detail .detail-right .detail-view .swiper-button-next {
+    display: none;
 }
 
 #project .project-detail .detail-right .detail-view .project-pic {
@@ -947,10 +976,12 @@
     justify-content: space-between;
     align-items: flex-end;
 }
+
 #project .project-detail .detail-right .detail-view:hover .detail-about {
     height: 20%;
 }
-#project .project-detail .detail-right .detail-view:hover .detail-about > .detail-about-left-top {
+
+#project .project-detail .detail-right .detail-view:hover .detail-about>.detail-about-left-top {
     margin-bottom: -50%;
 }
 
@@ -961,6 +992,7 @@
     backdrop-filter: blur(0.5px);
     transition: all 1.7s ease;
 }
+
 .detail-about .detail-about-left-top {
     transition: margin 1.7s ease;
 }
@@ -983,6 +1015,7 @@
     font-family: 'GmarketSansMedium';
     font-size: 0.625vw;
 }
+
 .detail-about .detail-about-left-top .language-used span {
     display: inline-block;
     padding: 0.416vw 0.677vw;
@@ -991,6 +1024,7 @@
     color: var(--grey-color2);
     border-radius: 15px;
 }
+
 .detail-about .detail-about-left-top .language-used span:not(:first-child) {
     margin-left: 0.52vw;
 }
@@ -1010,23 +1044,21 @@
 .detail-about .detail-about-right-bottom .link:last-child {
     margin-left: 0.78vw;
 }
+
 .detail-about .detail-about-right-bottom .link span {
     display: inline-block;
-    transform-origin: center right;
+    transform-origin: center;
     transition: transform .2s;
 }
 
 .detail-about .detail-about-right-bottom .link:hover span {
-    transform: rotate(10deg);
+    transform: rotate(-10deg);
 }
-
-
 /* project section ======================================= End Line ========== */
 
 
 
 /* contact section =========== Start Line ====================================== */
-
 #contact {
     background-image: url('./style-assets/images/contact-bg.png');
     background-size: cover;
@@ -1073,5 +1105,4 @@
 #contact .chat-link svg {
     margin-left: 0.5vw;
 }
-
 /* contact section ======================================= End Line ========== */

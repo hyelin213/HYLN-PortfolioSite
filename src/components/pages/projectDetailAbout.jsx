@@ -1,7 +1,6 @@
 import React from "react";
 
 export default function ProjectDetailAbout({contents, githubLink, demoLink, language}) {
-
  
     return (
         <>
@@ -16,14 +15,15 @@ export default function ProjectDetailAbout({contents, githubLink, demoLink, lang
                 <div className="detail-about-right-bottom">
                     <div className="link">
                         <a href={githubLink} target={'_blank'}>GITHUB</a>
-                        <span>↙</span>
+                        <span>↗</span>
                     </div>
                     <div className="link">
                         <a href={demoLink}>DEMO</a>
-                        <span>↙</span>
+                        <span>↗</span>
                     </div>
                 </div>
             </div>
         </>
     );
+
 }
