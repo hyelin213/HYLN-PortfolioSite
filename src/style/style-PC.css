@@ -92,7 +92,7 @@
     --black-color: #222;
     --grey-color: #888;
     --grey-color2: #777;
-    --contetns-box-color: #F6F6F6;
+    --contents-box-color: #F6F6F6;
 
     --top-btn-color: rgba(255, 192, 72, 0.5);
     --top-btn-hover-color: rgba(255, 192, 72, 0.8);
@@ -250,8 +250,8 @@
 }
 
 #footer-fixed p {
-    font-size: 0.8vw;
-    font-weight: 300;
+    font-size: 0.7vw;
+    font-weight: 100;
     letter-spacing: -0.0vw;
     color: var(--grey-color);
     font-family: 'Noto Sans KR', sans-serif;
@@ -532,7 +532,7 @@
     /* width: 430px;
     height: 555px; */
     border-radius: 10px;
-    background-color: var(--contetns-box-color);
+    background-color: var(--contents-box-color);
 }
 
 #about .about-right .about-contents {
@@ -895,12 +895,14 @@
 }
 #project .project-detail .detail-left .duration-contribution p {
     font-size: 0.6vw;
+    font-weight: 700;
+    letter-spacing: 0.04vw;
     line-height: 0.6vw;
     border: 1px solid var(--main-color);
     padding: 0.55vw 0.65vw 0.4vw;
     border-radius: 100px;
     color: var(--main-color);
-    font-family: 'GmarketSansMedium';
+    font-family: 'GmarketSansLight';
 }
 #project .project-detail .detail-left .duration-contribution p:not(:first-child) {
     margin-left: 10px;
@@ -919,9 +921,95 @@
 #project .project-detail .detail-right .detail-view {
     width: 46.3vw;
     height: 28.95vw;
-    background-color: var(--contetns-box-color);
+    background-color: var(--contents-box-color);
     border-radius: 10px;
+    position: relative;
 }
+
+#project .project-detail .detail-right .detail-view .detail-about {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    padding: 0 2.6vw 2.6vw 2.6vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+#project .project-detail .detail-right .detail-view:hover .detail-about > .detail-about-left-top {
+    margin-bottom: -50%;
+}
+
+/* detail-about 내용 */
+.detail-about {
+    background: linear-gradient(transparent, rgba(255, 255, 255, 0.7));
+}
+.detail-about .detail-about-left-top {
+    transition: margin 1.7s ease;
+    /* width: 27vw;
+    background-color: aqua; */
+}
+
+.detail-about .detail-about-left-top h3 {
+    font-family: 'GmarketSansMedium';
+    font-size: 1.56vw;
+    font-weight: 500;
+    letter-spacing: -0.05vw;
+    margin-bottom: 0.7vw;
+}
+
+.detail-about .detail-about-left-top p {
+    font-size: 0.88vw;
+    font-weight: 300;
+    margin-bottom: 1.04vw;
+}
+
+.detail-about .detail-about-left-top .language-used {
+    font-family: 'GmarketSansMedium';
+    font-size: 0.625vw;
+}
+.detail-about .detail-about-left-top .language-used span {
+    display: inline-block;
+    padding: 0.416vw 0.677vw;
+    font-weight: 500;
+    background-color: #E8E8E8;
+    color: var(--grey-color2);
+    border-radius: 15px;
+}
+.detail-about .detail-about-left-top .language-used span:not(:first-child) {
+    margin-left: 0.52vw;
+}
+
+.detail-about .detail-about-right-bottom {
+    display: flex;
+}
+
+.detail-about .detail-about-right-bottom .link,
+.detail-about .detail-about-right-bottom .link a {
+    color: var(--grey-color2);
+    font-size: 0.83vw;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.detail-about .detail-about-right-bottom .link:last-child {
+    margin-left: 0.78vw;
+}
+.detail-about .detail-about-right-bottom .link span {
+    display: inline-block;
+    transform-origin: center right;
+    transition: transform .2s;
+}
+
+
+.detail-about .detail-about-right-bottom .link:hover span {
+    transform: rotate(10deg);
+}
+
+
+
+
 
 /* project section ======================================= End Line ========== */
 
