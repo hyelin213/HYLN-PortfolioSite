@@ -179,8 +179,6 @@
 
     #about .about-left .swiper-navigation {
         position: absolute;
-        /* right: 0; */
-        /* bottom: -1020%; */
     }
 
     #about .about-left .title span {
@@ -345,8 +343,87 @@
         font-size: 6.25vw;
         height: 28.95vw;
         min-height: 4rem;
-
     }
+
+    /* project detail part ** */
+
+    #project .project-detail {
+        margin-top: 68.33vw;
+    }
+
+    #project .project-detail .project-detail-container {
+        width: 83vw;
+    }
+
+    #project .project-detail .detail-left {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    #project .project-detail .detail-left .project-class {
+        font-size: 3.75vw;
+        margin-bottom: 1.2vw;
+    }
+
+    #project .project-detail .detail-left .title {
+        font-size: 6.25vw;
+        margin-bottom: 4.16vw;
+    }
+
+    #project .project-detail .detail-left .duration-contribution p {
+        font-size: 2.5vw;
+        padding: 2.7vw 2.5vw 2.2vw;
+    }
+
+    #project .project-detail .detail-left button {
+        margin-right: 0;
+    }
+
+    #project .project-detail .detail-left button:hover {
+        margin-left: -1vw;
+    }
+
+    #project .project-detail .project-detail-container > .detail-about {
+        opacity: 1;
+        width: 100%;
+        height: 57vw;
+        border-top: 1px dotted var(--sub-color);
+        margin-top: 9.37vw;
+        flex-direction: column;
+    }
+
+    #project .project-detail .project-detail-container > .detail-about h3 {
+        font-size: 5.2vw;
+        margin: 9.37vw 0 4.16vw;
+    }
+
+    #project .project-detail .project-detail-container > .detail-about p {
+        font-size: 2.9vw;
+        margin-bottom: 5.2vw;
+    }
+
+    #project .project-detail .project-detail-container > .detail-about .language-used {
+        font-size: 2.08vw;
+    }
+
+    #project .project-detail .project-detail-container > .detail-about .language-used span {
+        padding: 1.6vw 2.5vw 1.4vw;
+        margin-bottom: 6.25vw;
+    }
+
+    .detail-about .detail-about-right-bottom .link,
+    .detail-about .detail-about-right-bottom .link a {
+        font-size: 3.33vw;
+        font-weight: 300;
+        color: var(--grey-color2);
+    }
+
+    #project .project-detail .detail-right .detail-view {
+        width: 100%;
+        height: 48vw;
+        margin-top: 6.25vw;
+    }
+
     /* project section ======================================= End Line ========== */
 
 

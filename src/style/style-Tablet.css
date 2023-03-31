@@ -369,7 +369,6 @@
     #project .project-detail .detail-left .duration-contribution p {
         font-size: 1.17vw;
         padding: 1vw 1.27vw 0.9vw;
-
     }
 
     #project .project-detail .detail-left button {
@@ -416,14 +415,12 @@
     .detail-about .detail-about-right-bottom .link a {
         font-size: 1.36vw;
         font-weight: 300;
+        color: var(--grey-color2);
     }
 
     .detail-about .detail-about-right-bottom .link:last-child {
         margin-left: 1.46vw;
     }
-
-
-
 
     #project .project-detail .detail-right .detail-view {
         width: 100%;
