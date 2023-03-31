@@ -14,7 +14,7 @@ export default function ProjectTeamSecond() {
     return (
         <>
             <ProjectDetailFrame 
-                title='Hogwarts School Site'
+                title='Melon Resite'
                 projectClass='팀 프로젝트 · 3인'
                 duration='2022.11　-　2022.12'
                 contribution='40'
