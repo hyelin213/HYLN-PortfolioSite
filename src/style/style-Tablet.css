@@ -10,6 +10,21 @@
     .tablet-exposure {
         display: block;
     }
+
+    /* 주 색상 변수 선언 */
+    :root {
+        --main-color: #F97904;
+        --sub-color: #FF9922;
+
+        --black-color: #222;
+        --grey-color: #888;
+        --grey-color2: #777;
+        --grey-color3: #aaa;
+        --contents-box-color: #F6F6F6;
+
+        --top-btn-color: rgba(255, 192, 72, 0.5);
+        --top-btn-hover-color: rgba(255, 192, 72, 0.8);
+    }
     
     
     /*** ================================= Portfolio Site Contents ================================= ***/
@@ -291,7 +306,7 @@
         height: 111.52vh;
     }
     #project .project-contents.detail-size {
-        height: 130vh;
+        height: 145vh;
     }
 
     #project .project-contents .project-list {
@@ -313,6 +328,111 @@
     #project .project-contents .project-list nav .title a {
         width: 100%;
         text-align: center;
+    }
+
+    /* project detail part ** */
+
+    #project .project-detail {
+        align-items: normal !important;
+        margin-top: 21.38vw;
+    }
+
+    #project .project-detail .project-detail-container {
+        width: 80vw;
+        flex-direction: column;
+    }
+
+    #project .project-detail .detail-left {
+        width: 100%;
+        height: 12vw;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-end;
+    }
+
+    #project .project-detail .detail-left .detail-left-contents {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    #project .project-detail .detail-left .project-class {
+        font-size: 1.75vw;
+        margin-bottom: 0.9vw;
+    }
+
+    #project .project-detail .detail-left .title {
+        font-size: 2.92vw;
+        margin-bottom: 1.95vw;
+    }
+
+    #project .project-detail .detail-left .duration-contribution p {
+        font-size: 1.17vw;
+        padding: 1vw 1.27vw 0.9vw;
+
+    }
+
+    #project .project-detail .detail-left button {
+        margin-right: 7.71vw;
+    }
+
+    #project .project-detail .detail-left button:hover {
+        margin-right: 8.21vw;
+    }
+
+    #project .project-detail .detail-left .duration-contribution {
+        display: flex;
+        margin-bottom: 0;
+    }
+
+    #project .project-detail .project-detail-container > .detail-about {
+        opacity: 1;
+        width: 100%;
+        height: 100%;
+        border-top: 1px dotted var(--sub-color);
+        margin-top: 4.4vw;
+        animation: fadeIn .6s linear;
+    }
+
+    #project .project-detail .project-detail-container > .detail-about h3 {
+        font-size: 2.44vw;
+        margin: 4.4vw 0 1.95vw;
+    }
+
+    #project .project-detail .project-detail-container > .detail-about p {
+        font-size: 1.46vw;
+        margin-bottom: 1.95vw;
+    }
+
+    #project .project-detail .project-detail-container > .detail-about .language-used {
+        font-size: 0.976vw;
+    }
+
+    #project .project-detail .project-detail-container > .detail-about .language-used span {
+        padding: 0.78vw 1.27vw 0.6vw;
+    }
+
+    .detail-about .detail-about-right-bottom .link,
+    .detail-about .detail-about-right-bottom .link a {
+        font-size: 1.36vw;
+        font-weight: 300;
+    }
+
+    .detail-about .detail-about-right-bottom .link:last-child {
+        margin-left: 1.46vw;
+    }
+
+
+
+
+    #project .project-detail .detail-right .detail-view {
+        width: 100%;
+        height: 48vw;
+        margin-top: 3.9vw;
+    }
+
+    #project .project-detail .detail-right .detail-view .detail-about {
+        display: none;
     }
     /* project section ======================================= End Line ========== */
 

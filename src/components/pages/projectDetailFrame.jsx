@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import sanitizeHTML from 'sanitize-html';
+import classNames from 'classnames';
 
 // 프로젝트에 대한 설명 component
 import ProjectDetailAbout from "./projectDetailAbout";
@@ -20,6 +21,7 @@ export default function ProjectDetailFrame({ title, projectClass, duration, cont
 
     const navigate = useNavigate();
     const [url, setUrl] = useState('https://hyelin213.github.io/HYLN-PortfolioSite');
+    const width = window.innerWidth <= 1024;
 
     // XSS 방지를 위한 필터링 과정
     const contents = sanitizeHTML(
@@ -28,11 +30,12 @@ export default function ProjectDetailFrame({ title, projectClass, duration, cont
         기숙사 목록페이지, 기숙사 상세페이지 그리고 마이페이지를 담당했습니다.`
     );
 
+
     return (
         <>
             <div className="project-detail" style={{ position: 'absolute' }}>
                 <div className="project-detail-container">
-                    <div className="detail-left">
+                    <div className='detail-left'>
                         <div className="detail-left-contents">
                             <p className="project-class">{projectClass}</p>
                             <h3 className="title">{title}</h3>
@@ -45,6 +48,12 @@ export default function ProjectDetailFrame({ title, projectClass, duration, cont
                             <img src={`${url}/images/navigate_icon.svg`} alt="뒤로가기 버튼" />
                         </button>
                     </div>
+                    <ProjectDetailAbout
+                        contents={contents}
+                        githubLink='https://github.com/hyelin213/2023TeamProject_HogwartsSchool.git'
+                        demoLink='#'
+                        language={['HTML5', 'SASS', 'JAVASCRIPT']}
+                    />
                     <div className="detail-right">
                         <Swiper
                             className="detail-view"
@@ -80,5 +89,5 @@ export default function ProjectDetailFrame({ title, projectClass, duration, cont
             </div>
         </>
     );
-    
+
 }

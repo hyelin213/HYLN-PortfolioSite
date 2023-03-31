@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import classNames from 'classnames';
 
 // pages components import
 import Nav from "./nav";
@@ -14,19 +15,13 @@ import { TransitionGroup, CSSTransition } from 'react-transition-group';
 export default function ProjectContents() {
 
     const [path, setPath] = useState('/HYLN-PortfolioSite');
-    // const [height, setHeight] = useState('');
     const location = useLocation();
-
 
     let slideDirection = 'right';
 
     return (
         <TransitionGroup
-            className={
-                location.pathname === path ? 
-                'project-contents' : 
-                'project-contents detail-size'
-            }
+            className={classNames('project-contents', {'detail-size': location.pathname === path ? '' : 'detail-size'})}
         >
             <CSSTransition
                 key={location.pathname}
