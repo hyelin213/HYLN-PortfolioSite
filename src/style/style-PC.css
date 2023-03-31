@@ -888,15 +888,14 @@
     font-family: 'Noto Sans KR', sans-serif;
 }
 
-#project .project-detail .project-detail-container > .detail-about {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
 #project .project-detail .detail-left {
     align-self: flex-end;
     animation: fadeIn .6s linear;
+}
+
+#project .project-detail .detail-left .detail-left-container {
+    position: relative;
+    z-index: 1;
 }
 
 #project .project-detail .detail-left .project-class {
@@ -939,10 +938,24 @@
     background-color: transparent;
     cursor: pointer;
     transition: margin .2s;
+    width: 2.5vw;
+    height: 1.77vw;
+}
+#project .project-detail .detail-left button img {
+    width: 100%;
+    height: 100%;
 }
 
 #project .project-detail .detail-left button:hover {
     margin-left: -0.5vw;
+}
+
+#project .project-detail .detail-left > .detail-about {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    position: relative;
+    z-index: 0;
 }
 
 #project .project-detail .detail-right {

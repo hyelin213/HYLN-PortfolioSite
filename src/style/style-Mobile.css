@@ -321,7 +321,7 @@
         height: 110vh;
     }
     #project .project-contents.detail-size {
-        height: 146.5vh;
+        height: 120vh;
     }
 
     #project .project-contents .project-list {
@@ -331,8 +331,8 @@
 
     #project .project-contents .project-list nav {
         width: 100%;
-        padding-top: 30vh;
-        padding-bottom: 0;
+        margin-top: 30vh;
+        margin-bottom: 0;
     }
 
     #project .project-contents .project-list nav ul {
@@ -348,7 +348,7 @@
     /* project detail part ** */
 
     #project .project-detail {
-        margin-top: 68.33vw;
+        margin-top: 35vh;
     }
 
     #project .project-detail .project-detail-container {
@@ -357,6 +357,11 @@
 
     #project .project-detail .detail-left {
         width: 100%;
+        height: 91.8vw;
+        justify-content: space-between;
+    }
+
+    #project .project-detail .detail-left .detail-left-container {
         justify-content: space-between;
     }
 
@@ -377,13 +382,15 @@
 
     #project .project-detail .detail-left button {
         margin-right: 0;
+        width: 10vw;
+        height: 7.083vw;
     }
 
     #project .project-detail .detail-left button:hover {
         margin-left: -1vw;
     }
 
-    #project .project-detail .project-detail-container > .detail-about {
+    #project .project-detail .detail-left > .detail-about {
         opacity: 1;
         width: 100%;
         height: 57vw;
@@ -392,21 +399,21 @@
         flex-direction: column;
     }
 
-    #project .project-detail .project-detail-container > .detail-about h3 {
+    #project .project-detail .detail-left > .detail-about h3 {
         font-size: 5.2vw;
         margin: 9.37vw 0 4.16vw;
     }
 
-    #project .project-detail .project-detail-container > .detail-about p {
+    #project .project-detail .detail-left > .detail-about p {
         font-size: 2.9vw;
         margin-bottom: 5.2vw;
     }
 
-    #project .project-detail .project-detail-container > .detail-about .language-used {
+    #project .project-detail .detail-left > .detail-about .language-used {
         font-size: 2.08vw;
     }
 
-    #project .project-detail .project-detail-container > .detail-about .language-used span {
+    #project .project-detail .detail-left > .detail-about .language-used span {
         padding: 1.6vw 2.5vw 1.4vw;
         margin-bottom: 6.25vw;
     }
@@ -414,8 +421,10 @@
     .detail-about .detail-about-right-bottom .link,
     .detail-about .detail-about-right-bottom .link a {
         font-size: 3.33vw;
-        font-weight: 300;
-        color: var(--grey-color2);
+    }
+
+    .detail-about .detail-about-right-bottom .link:last-child {
+        margin-left: 3.125vw;
     }
 
     #project .project-detail .detail-right .detail-view {

@@ -36,24 +36,26 @@ export default function ProjectDetailFrame({ title, projectClass, duration, cont
             <div className="project-detail" style={{ position: 'absolute' }}>
                 <div className="project-detail-container">
                     <div className='detail-left'>
-                        <div className="detail-left-contents">
-                            <p className="project-class">{projectClass}</p>
-                            <h3 className="title">{title}</h3>
-                            <div className="duration-contribution">
-                                <p className="duration">{duration}</p>
-                                <p className="contribution">기여도 {contribution}%</p>
+                        <div className="detail-left-container">
+                            <div className="detail-left-contents">
+                                <p className="project-class">{projectClass}</p>
+                                <h3 className="title">{title}</h3>
+                                <div className="duration-contribution">
+                                    <p className="duration">{duration}</p>
+                                    <p className="contribution">기여도 {contribution}%</p>
+                                </div>
                             </div>
+                            <button onClick={() => { navigate(-1) }}>
+                                <img src={`${url}/images/navigate_icon.svg`} alt="뒤로가기 버튼" />
+                            </button>
                         </div>
-                        <button onClick={() => { navigate(-1) }}>
-                            <img src={`${url}/images/navigate_icon.svg`} alt="뒤로가기 버튼" />
-                        </button>
+                        <ProjectDetailAbout
+                            contents={contents}
+                            githubLink='https://github.com/hyelin213/2023TeamProject_HogwartsSchool.git'
+                            demoLink='#'
+                            language={['HTML5', 'SASS', 'JAVASCRIPT']}
+                        />
                     </div>
-                    <ProjectDetailAbout
-                        contents={contents}
-                        githubLink='https://github.com/hyelin213/2023TeamProject_HogwartsSchool.git'
-                        demoLink='#'
-                        language={['HTML5', 'SASS', 'JAVASCRIPT']}
-                    />
                     <div className="detail-right">
                         <Swiper
                             className="detail-view"
