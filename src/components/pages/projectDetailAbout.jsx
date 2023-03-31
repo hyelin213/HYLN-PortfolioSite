@@ -18,7 +18,7 @@ export default function ProjectDetailAbout({contents, githubLink, demoLink, lang
                         <span>↗</span>
                     </div>
                     <div className="link">
-                        <a href={demoLink}>DEMO</a>
+                        <a href={demoLink} target={'_blank'}>DEMO</a>
                         <span>↗</span>
                     </div>
                 </div>

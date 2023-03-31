@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import sanitizeHTML from 'sanitize-html';
 import classNames from 'classnames';
 
 // 프로젝트에 대한 설명 component
@@ -17,19 +16,11 @@ import SwiperCore, { Navigation, Autoplay } from "swiper";
 SwiperCore.use([Navigation, Autoplay]);
 
 
-export default function ProjectDetailFrame({ title, projectClass, duration, contribution, viewName }) {
+export default function ProjectDetailFrame
+({ title, projectClass, duration, contribution, viewName, contents, githubLink, demoLink, language }) {
 
     const navigate = useNavigate();
     const [url, setUrl] = useState('https://hyelin213.github.io/HYLN-PortfolioSite');
-    const width = window.innerWidth <= 1024;
-
-    // XSS 방지를 위한 필터링 과정
-    const contents = sanitizeHTML(
-        `현실의 해리포터를 좋아하는 매니아층과 세계관 속 호그와트 학생 등,<br />
-        관계자들을 타겟으로 한 교육 플랫폼 기반의 학교 사이트입니다.<br />
-        기숙사 목록페이지, 기숙사 상세페이지 그리고 마이페이지를 담당했습니다.`
-    );
-
 
     return (
         <>
@@ -51,9 +42,9 @@ export default function ProjectDetailFrame({ title, projectClass, duration, cont
                         </div>
                         <ProjectDetailAbout
                             contents={contents}
-                            githubLink='https://github.com/hyelin213/2023TeamProject_HogwartsSchool.git'
-                            demoLink='#'
-                            language={['HTML5', 'SASS', 'JAVASCRIPT']}
+                            githubLink={githubLink}
+                            demoLink={demoLink}
+                            language={language}
                         />
                     </div>
                     <div className="detail-right">
@@ -66,9 +57,9 @@ export default function ProjectDetailFrame({ title, projectClass, duration, cont
                         >
                             <ProjectDetailAbout
                                 contents={contents}
-                                githubLink='https://github.com/hyelin213/2023TeamProject_HogwartsSchool.git'
-                                demoLink='#'
-                                language={['HTML5', 'SASS', 'JAVASCRIPT']}
+                                githubLink={githubLink}
+                                demoLink={demoLink}
+                                language={language}
                             />
                             <SwiperSlide>
                                 <div className="project-pic project-pic-1">
