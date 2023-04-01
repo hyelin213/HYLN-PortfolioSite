@@ -20,10 +20,9 @@ import SwiperCore, { Mousewheel, Pagination } from 'swiper';
 SwiperCore.use([Mousewheel, Pagination]);
 
 export default function Container() {
-    
+
     // 마우스 커서 따라다니는 도형
     const [xy, setXY] = useState({ x: 0, y: 0 });
-    const [color, setColor] = useState('');
 
     const xyHandle = (e) => {
         const mouseX = e.clientX;
@@ -32,8 +31,11 @@ export default function Container() {
     }
 
     // top 버튼 구현
-    const [ topBtn, setTopBtn ] = useState(false);
-    const [ introSection, setIntroSection ] = useState(false);
+    const [topBtn, setTopBtn] = useState(false);
+    const [introSection, setIntroSection] = useState(false);
+
+    const [color, setColor] = useState('');
+    const [active, setActive] = useState(false);
 
     const handleIntroEnter = () => {
         setIntroSection(true);
@@ -56,12 +58,20 @@ export default function Container() {
     const handleOtherEnterColor = () => {
         setColor('#fff');
     };
-    
+
+    const handleContactEnter = () => {
+        setActive(true);
+    }
+
+    const handleContactLeave = () => {
+        setActive(false);
+    }
+
     // 클릭 시 intro(top) 섹션으로 이동하기 - swiper pagination 이용
     const swiperRef = useRef(null);
 
     function goToIntro(slideIndex) {
-        if(swiperRef.current && swiperRef.current.swiper) {
+        if (swiperRef.current && swiperRef.current.swiper) {
             swiperRef.current.swiper.slideTo(slideIndex);
         }
     }
@@ -75,17 +85,17 @@ export default function Container() {
                 ></div>
                 {
                     topBtn && (
-                    <button
-                        className="top-btn"
-                        onClick={() => goToIntro(0)}
-                    >
-                        <svg viewBox="0 0 18 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M17.0934 9.76002L9.00007 1.66669L0.906738 9.76002M9.00007 24.3334V1.89335" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </button>
+                        <button
+                            className="top-btn"
+                            onClick={() => goToIntro(0)}
+                        >
+                            <svg viewBox="0 0 18 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.0934 9.76002L9.00007 1.66669L0.906738 9.76002M9.00007 24.3334V1.89335" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
                     )
                 }
-                <Header color={color}/>
+                <Header color={color} />
                 <FooterFixed />
                 <Swiper
                     id="contents-swiper"
@@ -120,10 +130,14 @@ export default function Container() {
                             onEnter={() => {
                                 handleOtherEnter();
                                 handleOtherEnterColor();
+                                handleContactEnter();
                             }}
-                            onLeave={handleOtherLeaveColor}
+                            onLeave={() => {
+                                handleOtherLeaveColor();
+                                handleContactLeave();
+                            }}
                         />
-                        <Contact />
+                        <Contact active={active} />
                     </SwiperSlide>
                 </Swiper>
             </div>

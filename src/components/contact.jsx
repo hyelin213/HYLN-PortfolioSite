@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+import classNames from 'classnames';
 
-export default function Contact() {
+export default function Contact({ active }) {
 
     const [url, setUrl] = useState('https://hyelin213.github.io/HYLN-PortfolioSite');
 
@@ -17,7 +18,7 @@ export default function Contact() {
                     </svg>
                 </div>
             </div>
-            <img className="bg-active" src={`${url}/images/contact-bg-active.png`} alt="배경화면 포인트 이미지" />
+            <img className={classNames('bg-point', {'active': active ? 'active' : ''})} src={`${url}/images/contact-bg-active.png`} alt="배경화면 포인트 이미지" />
         </>
     );
 

@@ -17,10 +17,6 @@ export default function Header({ color }) {
         }
     }, []);
 
-    useEffect(() => {
-        console.log(color)
-    }, [])
-
     const handleClick = () => {
         setModeClick(modeClick === 4 ? 34 : 4);
     }

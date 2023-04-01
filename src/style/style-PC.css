@@ -183,6 +183,7 @@
     font-family: 'GmarketSansBold';
     font-size: 30px;
     color: var(--black-color);
+    transition: color .1s;
 }
 
 #header .header-left .info {
@@ -208,6 +209,7 @@
 #header .time-check {
     font-size: 15px;
     color: var(--black-color);
+    transition: color .1s;
 }
 
 /* 헤더 라이트모드 & 다크모드 버튼 */
@@ -231,6 +233,7 @@
     width: 25px;
     height: 2px;
     background-color: var(--black-color);
+    transition: background .1s;
 }
 
 #contents-swiper {
@@ -1131,10 +1134,23 @@
     margin-left: 0.5vw;
 }
 
-#contact .bg-active {
+@keyframes compact {
+    0% {
+        height: 105%;
+    }
+    100% {
+        height: 100%;
+    }
+}
+
+#contact .bg-point {
     position: absolute;
     top: 0;
-    right: 5vw;
-    height: 45vw;
+    right: 0;
+    height: 105%;
+}
+#contact .bg-point.active {
+    animation: compact 1.5s ease;
+    animation-fill-mode:forwards;
 }
 /* contact section ======================================= End Line ========== */

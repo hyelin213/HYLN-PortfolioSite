@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import classNames from 'classnames';
 
 // 프로젝트에 대한 설명 component
 import ProjectDetailAbout from "./projectDetailAbout";

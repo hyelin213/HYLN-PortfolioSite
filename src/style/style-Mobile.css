@@ -468,10 +468,8 @@
         margin-left: 2.08vw;
     }
 
-    #contact .bg-active {
-        right: -45vw;
-        height: 130vw;
-        min-height: 500px;
+    #contact .bg-point {
+        right: -75vw;
     }
     /* contact section ======================================= End Line ========== */
 }
