@@ -23,6 +23,7 @@ export default function Container() {
     
     // 마우스 커서 따라다니는 도형
     const [xy, setXY] = useState({ x: 0, y: 0 });
+    const [color, setColor] = useState('');
 
     const xyHandle = (e) => {
         const mouseX = e.clientX;
@@ -46,6 +47,7 @@ export default function Container() {
 
     const handleOtherEnter = () => {
         setTopBtn(true);
+        setColor('#fff');
     };
     
     // 클릭 시 intro(top) 섹션으로 이동하기 - swiper pagination 이용

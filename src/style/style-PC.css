@@ -1090,6 +1090,10 @@
     align-items: center;
     padding-left: 18vw;
 }
+#contact .contact-container {
+    position: relative;
+    z-index: 1;
+}
 
 #contact h2 {
     font-size: 3.64vw;
@@ -1125,5 +1129,12 @@
 
 #contact .chat-link svg {
     margin-left: 0.5vw;
+}
+
+#contact .bg-active {
+    position: absolute;
+    top: 0;
+    right: 5vw;
+    height: 45vw;
 }
 /* contact section ======================================= End Line ========== */
