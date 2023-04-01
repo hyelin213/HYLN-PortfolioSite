@@ -1,12 +1,9 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { useDarkMode } from "./darkmodeContext";
 
 export default function Intro() {
 
-    const [modeClick, setModeClick] = useState(5);
-
-    const handleClick = () => {
-        setModeClick(modeClick === 5 ? 60 : 5);
-    }
+    const {darkMode, toggleDarkMode} = useDarkMode();
 
     return (
         <>
@@ -17,10 +14,10 @@ export default function Intro() {
                     <p>Enjoy it.</p>
                 </div>
             </div>
-            <div className="light-dark-mode" onClick={handleClick}>
+            <div className="light-dark-mode" onClick={toggleDarkMode}>
                 <div
                     className="mode-btn"
-                    style={{ marginTop: `${modeClick}px` }}
+                    style={{ marginTop: `${darkMode ? '60' : '5'}px` }}
                 ></div>
             </div>
             <div className="signature-shape">

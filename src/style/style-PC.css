@@ -92,8 +92,24 @@
 
 /* 주 색상 변수 선언 */
 :root {
+    --bg-color: #fff;
     --main-color: #F97904;
     --sub-color: #FF9922;
+
+    --black-color: #222;
+    --grey-color: #888;
+    --grey-color2: #777;
+    --grey-color3: #aaa;
+    --contents-box-color: #F6F6F6;
+
+    --top-btn-color: rgba(255, 192, 72, 0.5);
+    --top-btn-hover-color: rgba(255, 192, 72, 0.8);
+}
+
+html.dark {
+    --bg-color: #222;
+    --main-color: #0B7BAB;
+    --sub-color: #0B7BAB;
 
     --black-color: #222;
     --grey-color: #888;
@@ -115,8 +131,10 @@
 /*** ================================= Portfolio Site Contents ================================= ***/
 
 #container {
+    background-color: var(--bg-color);
     width: 100%;
     height: 100%;
+    transition: all .1s;
 }
 
 /* 삭제 */
@@ -315,10 +333,10 @@
     width: 35px;
     height: 90px;
     border-radius: 35px;
-    background-color: #FF9922;
+    background-color: var(--sub-color);
     display: flex;
     justify-content: center;
-    transition: 1s ease;
+    transition: all 1s ease;
     cursor: pointer;
 }
 

@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
 import moment from "moment";
+import { useDarkMode } from "./darkmodeContext";
 
 export default function Header({ color }) {
 
+    const {darkMode, toggleDarkMode} = useDarkMode();
+
     let timer = null;
     const [nowTime, setNowTime] = useState(moment());
-    const [modeClick, setModeClick] = useState(4);
 
     useEffect(() => {
         timer = setInterval(() => {
@@ -16,10 +18,6 @@ export default function Header({ color }) {
             clearInterval(timer);
         }
     }, []);
-
-    const handleClick = () => {
-        setModeClick(modeClick === 4 ? 34 : 4);
-    }
 
     return (
         <>
@@ -37,10 +35,10 @@ export default function Header({ color }) {
                         {nowTime.format('YYYY.MM.DD HH:mm')}
                     </div>
                     <div className="header-right">
-                        <div className="light-dark-mode" onClick={handleClick}>
+                        <div className="light-dark-mode" onClick={toggleDarkMode}>
                             <div
                                 className="mode-btn"
-                                style={{ marginLeft: `${modeClick}px` }}
+                                style={{ marginLeft: `${darkMode ? '34' : '4'}px` }}
                             ></div>
                         </div>
                         <div className="menu-btn">

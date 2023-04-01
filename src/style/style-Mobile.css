@@ -11,6 +11,21 @@
         display: none;
     }
 
+    /* 주 색상 변수 선언 */
+    :root {
+        --main-color: #F97904;
+        --sub-color: #FF9922;
+    
+        --black-color: #222;
+        --grey-color: #888;
+        --grey-color2: #777;
+        --grey-color3: #aaa;
+        --contents-box-color: #F6F6F6;
+    
+        --top-btn-color: rgba(255, 192, 72, 0.5);
+        --top-btn-hover-color: rgba(255, 192, 72, 0.8);
+    }
+
 
     /*** ================================= Portfolio Site Contents ================================= ***/
 
@@ -59,7 +74,7 @@
         width: 55px;
         height: 25px;
         border-radius: 35px;
-        background-color: #FF9922;
+        background-color: var(--sub-color);
         display: flex;
         align-items: center;
         cursor: pointer;
