@@ -1081,7 +1081,7 @@
 
 /* contact section =========== Start Line ====================================== */
 #contact {
-    background-image: url('./style-assets/images/contact-bg.png');
+    background-image: url('../../public/images/contact-bg.png');
     background-size: cover;
     font-family: 'Noto Sans KR', sans-serif;
     color: #fff;

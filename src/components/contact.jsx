@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function Contact() {
+
+    const [url, setUrl] = useState('https://hyelin213.github.io/HYLN-PortfolioSite');
 
     return (
         <>
@@ -14,6 +16,7 @@ export default function Contact() {
                         <path d="M10.8333 13.1918C10.8333 14.1834 10.4667 15.1001 9.85 15.8251C9.025 16.8251 7.71666 17.4668 6.25 17.4668L4.075 18.7584C3.70833 18.9834 3.24166 18.6751 3.29166 18.2501L3.5 16.6084C2.38333 15.8334 1.66666 14.5918 1.66666 13.1918C1.66666 11.7251 2.45 10.4334 3.65 9.66678C4.39166 9.18345 5.28333 8.90845 6.25 8.90845C8.78333 8.90845 10.8333 10.8251 10.8333 13.1918Z" stroke="#F97904" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
                 </div>
+                <img src={`${url}/images/contact-bg-active.png`} alt="배경화면 포인트 이미지" />
             </div>
         </>
     );
