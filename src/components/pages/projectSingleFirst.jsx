@@ -2,13 +2,17 @@ import React from "react";
 import ProjectDetailFrame from "./projectDetailFrame";
 import sanitizeHTML from 'sanitize-html';
 
+// HWT 사이트
+
 export default function ProjectSingleFirst() {
 
     // XSS 방지를 위한 필터링 과정
     const contents = sanitizeHTML(
-        `현실의 해리포터를 좋아하는 매니아층과 세계관 속 호그와트 학생 등,<br />
-        관계자들을 타겟으로 한 교육 플랫폼 기반의 학교 사이트입니다.<br />
-        기숙사 목록페이지, 기숙사 상세페이지 그리고 마이페이지를 담당했습니다.`
+        `사용자의 위치 정보를 기반으로 하는 날씨 정보 사이트입니다.<br />
+        React를 처음 공부하는 과정에서 구현한 사이트이며, UI보다는 기능에 중점을 두었습니다.<br />
+        'openWeatherMap' API를 사용하여 시간 별, 주간 별, 전국 날씨를 출력하고,<br />
+        기온에 따른 추천 옷차림을 확인할 수 있습니다.
+        `
     );
 
     return (

@@ -541,6 +541,7 @@
     height: 29vw;
     border-radius: 10px;
     background-color: var(--contents-box-color);
+    pointer-events: none;
 }
 
 #about .about-right .about-contents {
@@ -968,6 +969,7 @@
     background-color: var(--contents-box-color);
     border-radius: 10px;
     position: relative;
+    pointer-events: none;
 }
 
 #project .project-detail .detail-right .detail-view .swiper-button-prev,

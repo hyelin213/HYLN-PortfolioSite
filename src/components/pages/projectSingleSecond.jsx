@@ -2,12 +2,15 @@ import React from "react";
 import ProjectDetailFrame from "./projectDetailFrame";
 import sanitizeHTML from 'sanitize-html';
 
+// 포트폴리오 사이트
+
 export default function ProjectSingleSecond() {
     // XSS 방지를 위한 필터링 과정
     const contents = sanitizeHTML(
-        `현실의 해리포터를 좋아하는 매니아층과 세계관 속 호그와트 학생 등,<br />
-        관계자들을 타겟으로 한 교육 플랫폼 기반의 학교 사이트입니다.<br />
-        기숙사 목록페이지, 기숙사 상세페이지 그리고 마이페이지를 담당했습니다.`
+        `보유한 기술과 진행했던 프로젝트를 보여줄 수 있는 포트폴리오 사이트입니다.<br />
+        정보를 쉽고 간단하게 파악하는 것을 목표로 했으며, SPA(Single Page Application)로<br />
+        구성했습니다. React 활용이 익숙해지도록 다양한 기능을 활용하여 구현한 사이트입니다.
+        `
     );
 
     return (
