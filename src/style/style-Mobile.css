@@ -467,5 +467,11 @@
     #contact .chat-link svg {
         margin-left: 2.08vw;
     }
+
+    #contact .bg-active {
+        right: -45vw;
+        height: 130vw;
+        min-height: 500px;
+    }
     /* contact section ======================================= End Line ========== */
 }

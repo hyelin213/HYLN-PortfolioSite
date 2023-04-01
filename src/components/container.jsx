@@ -47,6 +47,13 @@ export default function Container() {
 
     const handleOtherEnter = () => {
         setTopBtn(true);
+    };
+
+    const handleOtherLeaveColor = () => {
+        setColor('');
+    };
+
+    const handleOtherEnterColor = () => {
         setColor('#fff');
     };
     
@@ -78,7 +85,7 @@ export default function Container() {
                     </button>
                     )
                 }
-                <Header />
+                <Header color={color}/>
                 <FooterFixed />
                 <Swiper
                     id="contents-swiper"
@@ -110,7 +117,11 @@ export default function Container() {
                     </SwiperSlide>
                     <SwiperSlide id="contact">
                         <Waypoint
-                            onEnter={handleOtherEnter}
+                            onEnter={() => {
+                                handleOtherEnter();
+                                handleOtherEnterColor();
+                            }}
+                            onLeave={handleOtherLeaveColor}
                         />
                         <Contact />
                     </SwiperSlide>
