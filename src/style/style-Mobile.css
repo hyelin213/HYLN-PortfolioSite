@@ -335,10 +335,10 @@
     }
 
     #project .project-contents {
-        height: 110vh;
+        height: 100vh;
     }
     #project .project-contents.detail-size {
-        height: 250vw;
+        height: 280vw;
     }
 
     #project .project-contents .project-list {
@@ -374,7 +374,6 @@
 
     #project .project-detail .detail-left {
         width: 100%;
-        height: 91.8vw;
         justify-content: space-between;
     }
 
@@ -410,7 +409,7 @@
     #project .project-detail .detail-left > .detail-about {
         opacity: 1;
         width: 100%;
-        height: 57vw;
+        /* height: 57vw; */
         border-top: 1px dotted var(--sub-color);
         margin-top: 9.37vw;
         flex-direction: column;
@@ -455,32 +454,33 @@
 
     
     /* contact section =========== Start Line ====================================== */
-    #contact .contact-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    #contact h2 {
+    #contact .contact-title h2 {
         font-size: 9.79vw;
         letter-spacing: -0.2vw;
     }
 
-    #contact p {
+    #contact .contact-title p {
         font-size: 3.33vw;
-        margin: 1.4vw 0 10vw;
+        margin-top: 1.4vw;
     }
 
-    #contact .chat-link {
-        width: 27.9vw;
-        height: 9.37vw;
+    #contact .contact-contents {
+        margin: 9vw 0 0 0.5vw;
     }
-    
-    #contact .chat-link span {
-        font-size: 3.54vw;
+
+    #contact .contact-contents span {
+        height: 17.5vw;
     }
-    
-    #contact .chat-link svg {
-        margin-left: 2.08vw;
+
+    #contact .contact-contents .contact-info {
+        display: flex;
+        flex-direction: column;
+        margin-left: 6vw;
+    }
+
+    #contact .contact-contents .contact-info a {
+        font-size: 3vw;
+        line-height: 6vw;
     }
 
     #contact .bg-point {

@@ -26,9 +26,9 @@ export default function Header({ color }) {
                     <div className="header-left">
                         <h2 className="logo" style={{color: `${color}`}}>HYLN</h2>
                         <div className="info">
-                            <p className="phone-num">+82 10 2932 6426</p>
+                            <a href="tel:+82 10-2932-6426" className="phone-num">+82 10 2932 6426</a>
                             <span>/</span>
-                            <p className="email">myelin0213@gmail.com</p>
+                            <a href="mailto:myelin0213@gmail.com" className="email">myelin0213@gmail.com</a>
                         </div>
                     </div>
                     <div className="time-check" style={{color: `${color}`}}>
