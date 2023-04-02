@@ -66,7 +66,7 @@ export default function ProjectDetailFrame
                         <Swiper
                             className="detail-view"
                             slidesPerView={1}
-                            spaceBetween={0}
+                            spaceBetween={10}
                             autoplay={{ delay: 4000 }}
                             allowTouchMove={false}
                         >

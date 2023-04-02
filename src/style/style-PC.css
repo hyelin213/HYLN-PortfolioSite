@@ -1131,7 +1131,8 @@ html.dark {
 }
 
 #project .project-detail .detail-right .detail-view .project-pic img {
-    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 #project .project-detail .detail-right .detail-view .detail-about {
