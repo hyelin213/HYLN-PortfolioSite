@@ -70,7 +70,8 @@ export default function Container() {
     // 클릭 시 intro(top) 섹션으로 이동하기 - swiper pagination 이용
     const swiperRef = useRef(null);
 
-    function goToIntro(slideIndex) {
+    function goToSection(slideIndex) {
+        
         if (swiperRef.current && swiperRef.current.swiper) {
             swiperRef.current.swiper.slideTo(slideIndex);
         }
@@ -87,7 +88,7 @@ export default function Container() {
                     topBtn && (
                         <button
                             className="top-btn"
-                            onClick={() => goToIntro(0)}
+                            onClick={() => goToSection(0)}
                         >
                             <svg viewBox="0 0 18 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M17.0934 9.76002L9.00007 1.66669L0.906738 9.76002M9.00007 24.3334V1.89335" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
@@ -95,7 +96,10 @@ export default function Container() {
                         </button>
                     )
                 }
-                <Header color={color} />
+                <Header
+                    color={color}
+                    section={goToSection}
+                />
                 <FooterFixed />
                 <Swiper
                     id="contents-swiper"

@@ -23,10 +23,6 @@ export default function ProjectDetailFrame
     const [url, setUrl] = useState('https://hyelin213.github.io/HYLN-PortfolioSite');
     const { darkMode, toggleDarkMode } = useDarkMode();
 
-    useEffect(() => {
-        console.log(slide)
-    }, [])
-
     return (
         <>
             <div className="project-detail" style={{ position: 'absolute' }}>

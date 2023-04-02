@@ -17,7 +17,7 @@ export default function Contact({ active }) {
                     <div className="contact-info">
                         <a href="tel:+82 10-2932-6426" className="phone-num">+82 10 2932 6426</a>
                         <a href="mailto:myelin0213@gmail.com" className="email">myelin0213@gmail.com</a>
-                        <a href="https://github.com/hyelin213" className="mobile-exposure">Github</a>
+                        <a href="https://github.com/hyelin213" target={'_blank'} className="mobile-exposure">Github</a>
                     </div>
                 </div>
             </div>

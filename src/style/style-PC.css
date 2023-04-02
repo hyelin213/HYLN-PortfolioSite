@@ -17,6 +17,7 @@
     --top-btn-color: rgba(255, 192, 72, 0.5);
     --top-btn-hover-color: rgba(255, 192, 72, 0.8);
 
+    --contents-border-color: #E6E6E6;
     --selection-color: rgb(255, 222, 132);
 }
 
@@ -34,6 +35,7 @@ html.dark {
     --top-btn-color: rgba(11, 123, 171, 0.5);
     --top-btn-hover-color: rgba(11, 123, 171, 0.8);
 
+    --contents-border-color: #383838;
     --selection-color: rgb(199, 230, 255);
 }
 
@@ -51,7 +53,6 @@ html.dark {
 }
 
 @keyframes textShake {
-
     0%,
     40% {
         transform: rotate(0deg);
@@ -259,22 +260,111 @@ html.dark {
 }
 
 /* 헤더 메뉴 */
-#header .menu-btn {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
-    height: 15px;
-    cursor: pointer;
-    margin-left: 72.56px;
+#header .menu {
+    position: relative;
 }
 
-#header .menu-btn span {
+#header .menu .menu-btn {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    /* margin-left: 72.56px; */
+    transform-origin: center;
+    position: relative;
+}
+
+#header .menu .menu-btn span {
     display: inline-block;
     width: 25px;
     height: 2px;
     background-color: var(--black-color);
     transition: background .1s;
+    transition: all .2s;
+}
+#header .menu .menu-btn span:not(:first-child) {
+    margin-top: 4px;
+}
+@keyframes menu1 {
+    100% {
+        transform: rotate(-45deg);
+    }
+}
+@keyframes menu2 {
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+#header .menu .menu-btn span.active:first-child {
+    animation: menu1 .1s .3s linear;
+    animation-fill-mode:forwards;
+}
+
+#header .menu .menu-btn span.active:nth-child(2) {
+    opacity: 0;
+}
+
+#header .menu .menu-btn span.active:last-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: menu2 .1s .3s linear;
+    animation-fill-mode:forwards;
+}
+
+#header .menu .menu-btn span.active:not(:first-child) {
+    margin-top: 0;
+}
+
+#header .menu .menu-list {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    text-align: right;
+}
+
+@keyframes menuList2 {
+    0% {
+        opacity: 0;
+        margin-top: 30px;
+    }
+    100% {
+        opacity: 1;
+        margin-top: 25px;
+    }
+}
+@keyframes menuList {
+    0% {
+        margin-top: 5px;
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#header .menu .menu-list nav ul li {
+    color: var(--grey-color3);
+    font-family: 'GmarketSansLight';
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#header .menu .menu-list nav ul li:not(:first-child) {
+    margin-top: 25px;
+}
+
+#header .menu .menu-list nav ul li:first-child {
+    animation: menuList .2s linear;
+}
+#header .menu .menu-list nav ul li:nth-child(2) {
+    animation: menuList2 .3s linear;
+}
+#header .menu .menu-list nav ul li:nth-child(3) {
+    animation: menuList2 .4s linear;
+}
+#header .menu .menu-list nav ul li:last-child {
+    animation: menuList2 .5s linear;
 }
 
 #contents-swiper {
@@ -1025,6 +1115,7 @@ html.dark {
     background-color: var(--contents-box-color);
     border-radius: 10px;
     position: relative;
+    border: 1px solid var(--contents-border-color);
 }
 
 #project .project-detail .detail-right .detail-view .swiper-button-prev,
