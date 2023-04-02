@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useDarkMode } from "./darkmodeContext";
 
 // swiper
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -16,6 +17,7 @@ export default function About() {
     const [changeTxt, setChangeTxt] = useState('1');
     const [clicked, setClicked] = useState(false);
     const keywords = ['신입', 'FE', '성장하는', '도전적인', '탐구심'];
+    const { darkMode, toggleDarkMode } = useDarkMode();
 
     function handleClick() {
         setClicked(true);
@@ -54,7 +56,7 @@ export default function About() {
                                     <p>Front-end 개발자를 꿈꾸고 있는 <br className="PC-exposure" />김혜린입니다.</p>
                                 </div>
                                 <div className="keywords">
-                                    {keywords.map(item => (<p>{item}</p>))}
+                                    {keywords.map(item => (<p style={{ color: darkMode ? 'var(--black-color)' : '' }}>{item}</p>))}
                                 </div>
                             </div>
                             <div className="swiper-navigation mobile-hide">
