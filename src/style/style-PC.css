@@ -262,13 +262,13 @@ html.dark {
 /* 헤더 메뉴 */
 #header .menu {
     position: relative;
+    margin-left: 72.56px;
 }
 
 #header .menu .menu-btn {
     display: flex;
     flex-direction: column;
     cursor: pointer;
-    /* margin-left: 72.56px; */
     transform-origin: center;
     position: relative;
 }
