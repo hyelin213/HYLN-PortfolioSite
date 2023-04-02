@@ -80,11 +80,6 @@
         height: 100vh;
     }
 
-    #about .about-scroll-option {
-        display: flex;
-        /* align-items: center; */
-    }
-
     #about .about-scroll-option>.swiper-wrapper {
         scroll-snap-type: y mandatory;
         scroll-behavior: smooth;
@@ -98,7 +93,6 @@
     #about .about-container {
         width: 80vw;
         flex-direction: column;
-        padding: 15vh 0;
     }
 
     #about .about-left {
@@ -106,6 +100,7 @@
         justify-content: space-between;
         align-items: flex-end;
         margin-bottom: 4vw;
+        padding-top: 23vh;
     }
 
     #about .about-left .title {
@@ -169,6 +164,10 @@
         font-size: 1.5vw;
         font-weight: 400;
         color: #777;
+    }
+
+    #about .about-right {
+        padding-bottom: 15vh;
     }
 
     #about .about-right .about-title,
@@ -317,7 +316,7 @@
 
     #project .project-contents .project-list nav {
         width: 100%;
-        margin-top: 30vw;
+        margin-top: 40vw;
         margin-bottom: 19vh;
     }
     

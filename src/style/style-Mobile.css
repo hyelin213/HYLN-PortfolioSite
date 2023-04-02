@@ -64,8 +64,7 @@
 
     /* 헤더 시간 */
     #header .header-left .info {
-        opacity: 0;
-        transition: .1s;
+        display: none;
     }
 
     /* 헤더 라이트모드 & 다크모드 버튼 */
@@ -143,10 +142,6 @@
         height: 100vh;
     }
 
-    #about .about-scroll-option {
-        align-items: normal;
-    }
-
     #about .about-scroll-option > .swiper-wrapper {
         scroll-snap-type: y mandatory;
         scroll-behavior: smooth;
@@ -165,6 +160,7 @@
 
     #about .about-left {
         position: relative;
+        padding-top: 0;
     }
     #about .about-left .title h2 {
         font-size: 7vw;
@@ -207,6 +203,7 @@
         width: 100%;
         flex-direction: column;
         align-items: flex-end;
+        padding-bottom: 0;
     }
 
     #about .about-right .about-title, #about .about-right .about-contents  {

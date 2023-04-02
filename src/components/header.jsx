@@ -52,16 +52,16 @@ export default function Header({ color, section }) {
                                 <nav>
                                     <ul>
                                         <li onClick={() => section(0)}>
-                                            <p>Intro</p>
+                                            <p style={{ color: `${color}` }}>Intro</p>
                                         </li>
                                         <li onClick={() => section(1)}>
-                                            <p>About</p>
+                                            <p style={{ color: `${color}` }}>About</p>
                                         </li>
                                         <li onClick={() => section(2)}>
-                                            <p>Project</p>
+                                            <p style={{ color: `${color}` }}>Project</p>
                                         </li>
                                         <li onClick={() => section(3)}>
-                                            <p>Contact</p>
+                                            <p style={{ color: `${color}` }}>Contact</p>
                                         </li>
                                     </ul>
                                 </nav>
