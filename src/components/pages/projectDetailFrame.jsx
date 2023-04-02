@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useDarkMode } from "../darkmodeContext";
 
@@ -17,11 +17,15 @@ SwiperCore.use([Navigation, Autoplay]);
 
 
 export default function ProjectDetailFrame
-    ({ title, projectClass, duration, contribution, viewName, contents, githubLink, demoLink, language }) {
+    ({ title, projectClass, duration, contribution, viewName, contents, githubLink, demoLink, language, slide }) {
 
     const navigate = useNavigate();
     const [url, setUrl] = useState('https://hyelin213.github.io/HYLN-PortfolioSite');
     const { darkMode, toggleDarkMode } = useDarkMode();
+
+    useEffect(() => {
+        console.log(slide)
+    }, [])
 
     return (
         <>
@@ -76,21 +80,15 @@ export default function ProjectDetailFrame
                                 demoLink={demoLink}
                                 language={language}
                             />
-                            <SwiperSlide>
-                                <div className="project-pic project-pic-1">
-                                    <img src={`${url}/images/project_contents/${viewName}/img_1.png`} alt="프로젝트 이미지1" />
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <div className="project-pic project-pic-2">
-                                    <img src={`${url}/images/project_contents/${viewName}/img_2.png`} alt="프로젝트 이미지2" />
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <div className="project-pic project-pic-3">
-                                    <img src={`${url}/images/project_contents/${viewName}/img_3.png`} alt="프로젝트 이미지3" />
-                                </div>
-                            </SwiperSlide>
+                            {
+                                slide.map((item, idx) => (
+                                    <SwiperSlide>
+                                        <div className={`project-pic project-pic-${idx+1}`}>
+                                            <img src={`${url}/images/project_contents/${viewName}/${item}.png`} alt={`프로젝트 이미지${idx+1}`} />
+                                        </div>
+                                    </SwiperSlide>
+                                ))
+                            }
                         </Swiper>
                     </div>
                 </div>

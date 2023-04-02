@@ -13,6 +13,8 @@ export default function ProjectTeamFirst() {
         헤더, 푸터와 기숙사 목록페이지, 기숙사 상세페이지 그리고 마이페이지를 담당했습니다.`
     );
 
+    const projectView = ['img_1', 'img_2', 'img_3'];
+
     return (
         <>
             <ProjectDetailFrame 
@@ -25,6 +27,7 @@ export default function ProjectTeamFirst() {
                 githubLink='https://github.com/hyelin213/2023TeamProject_HogwartsSchool.git'
                 demoLink='https://jihana030.github.io/Hogwarts_School/'
                 language={['HTML5', 'SASS', 'JAVASCRIPT']}
+                slide={projectView}
             />
         </>
     );

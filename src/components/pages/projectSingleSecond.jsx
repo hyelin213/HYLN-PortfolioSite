@@ -9,9 +9,11 @@ export default function ProjectSingleSecond() {
     const contents = sanitizeHTML(
         `보유한 기술과 진행했던 프로젝트를 보여줄 수 있는 포트폴리오 사이트입니다.<br />
         정보를 쉽고 간단하게 파악하는 것을 목표로 했으며, SPA(Single Page Application)로<br />
-        구성했습니다. React 활용이 익숙해지도록 다양한 기능을 활용하여 구현한 사이트입니다.
+        구성했습니다. React의 기초지식을 기반하여 다양한 기능의 활용을 목적으로 했습니다.
         `
     );
+
+    const projectView = ['img_1', 'img_2', 'img_3', 'img_4'];
 
     return (
         <>
@@ -25,6 +27,7 @@ export default function ProjectSingleSecond() {
                 githubLink='https://github.com/hyelin213/HYLN-PortfolioSite.git'
                 demoLink='https://hyelin213.github.io/HYLN-PortfolioSite/'
                 language={['HTML5', 'CSS3', 'REACT']}
+                slide={projectView}
             />
         </>
     );

@@ -338,7 +338,7 @@
         height: 110vh;
     }
     #project .project-contents.detail-size {
-        height: 120vh;
+        height: 250vw;
     }
 
     #project .project-contents .project-list {
