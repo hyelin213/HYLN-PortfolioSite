@@ -913,7 +913,7 @@ html.dark {
 
 #project .project-detail .project-detail-container {
     width: 70vw;
-    height: 28.95vw;
+    height: 23.75vw;
     display: flex;
     justify-content: space-between;
     font-family: 'Noto Sans KR', sans-serif;
@@ -998,7 +998,7 @@ html.dark {
 
 #project .project-detail .detail-right .detail-view {
     width: 46.3vw;
-    height: 28.95vw;
+    height: 23.75vw;
     background-color: var(--contents-box-color);
     border-radius: 10px;
     position: relative;
