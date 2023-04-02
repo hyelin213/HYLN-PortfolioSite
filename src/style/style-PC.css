@@ -18,6 +18,7 @@
     --top-btn-hover-color: rgba(255, 192, 72, 0.8);
 
     --contents-border-color: #E6E6E6;
+    --brace-color: #E7E7E7;
     --selection-color: rgb(255, 222, 132);
 }
 
@@ -36,6 +37,7 @@ html.dark {
     --top-btn-hover-color: rgba(11, 123, 171, 0.8);
 
     --contents-border-color: #383838;
+    --brace-color: #444444;
     --selection-color: rgb(199, 230, 255);
 }
 
@@ -810,7 +812,7 @@ html.dark {
 #about .about-right .about-title .title-3-aspi .brace {
     font-size: 2vw;
     letter-spacing: -0.1vw;
-    color: #E7E7E7;
+    color: var(--brace-color);
     bottom: 2vw;
     right: 2vw;
 }

@@ -9,7 +9,7 @@ export default function ProjectSingleSecond() {
     const contents = sanitizeHTML(
         `보유한 기술과 진행했던 프로젝트를 보여줄 수 있는 포트폴리오 사이트입니다.<br />
         정보를 쉽고 간단하게 파악하는 것을 목표로 했으며, SPA(Single Page Application)로<br />
-        구성했습니다. React의 기초지식을 기반하여 다양한 기능의 활용을 목적으로 했습니다.
+        구성했습니다. React의 기초지식을 기반하여 다양한 기능의 활용을 목적으로 합니다.
         `
     );
 

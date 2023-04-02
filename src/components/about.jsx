@@ -78,6 +78,7 @@ export default function About() {
                                 className="about-title"
                                 slidesPerView={1}
                                 spaceBetween={10}
+                                allowTouchMove={false}
                                 pagination={{
                                     type: "fraction",
                                     el: '.page-number1',
@@ -117,6 +118,7 @@ export default function About() {
                                 className="about-contents"
                                 slidesPerView={1}
                                 spaceBetween={10}
+                                allowTouchMove={false}
                                 pagination={{
                                     type: "fraction",
                                     el: '.page-number2'

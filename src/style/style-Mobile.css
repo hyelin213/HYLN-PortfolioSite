@@ -345,7 +345,7 @@
 
     #project .project-contents .project-list nav {
         width: 100%;
-        margin-top: 30vh;
+        margin-top: 35vh;
         margin-bottom: 0;
     }
 
@@ -362,7 +362,7 @@
     /* project detail part ** */
 
     #project .project-detail {
-        margin-top: 35vh;
+        margin-top: 40vh;
     }
 
     #project .project-detail .project-detail-container {
