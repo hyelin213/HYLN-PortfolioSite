@@ -91,6 +91,10 @@
     #header .menu {
         margin-left: 25px;
     }
+
+    #header .menu .menu-list nav ul li p {
+        font-size: 3vw;
+    }
     /* header ======================================= End Line ========== */
 
 
