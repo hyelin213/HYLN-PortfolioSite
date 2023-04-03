@@ -351,6 +351,14 @@ html.dark {
     cursor: pointer;
 }
 
+#header .menu .menu-list nav ul li p {
+    transition: color .2s;
+}
+
+#header .menu .menu-list nav ul li:hover p {
+    color: var(--black-color);
+}
+
 #header .menu .menu-list nav ul li:not(:first-child) {
     margin-top: 25px;
 }
