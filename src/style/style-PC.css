@@ -417,8 +417,20 @@ html.dark {
     text-align: center;
 }
 
+@keyframes intro {
+    0% {
+        margin-top: 1.5vw;
+        opacity: 0;
+    }
+    100% {
+        margin-top: 0;
+        opacity: 1;
+    }
+}
+
 #intro .center-title {
     z-index: 1;
+    animation: intro .3s linear;
 }
 
 #intro .center-title h1 {
