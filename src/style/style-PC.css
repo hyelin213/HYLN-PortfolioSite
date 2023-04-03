@@ -346,7 +346,7 @@ html.dark {
 }
 
 #header .menu .menu-list nav ul li {
-    color: var(--grey-color3);
+    color: var(--grey-color2);
     font-family: 'GmarketSansLight';
     cursor: pointer;
 }
