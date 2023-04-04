@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import moment from "moment";
 import { useDarkMode } from "./darkmodeContext";
+import classNames from 'classnames';
 
 export default function Header({ color, section }) {
 
@@ -42,7 +43,7 @@ export default function Header({ color, section }) {
                                 style={{ marginLeft: `${darkMode ? '34' : '4'}px` }}
                             ></div>
                         </div>
-                        <div className="menu">
+                        <div className={classNames('menu', clicked ? 'active' : 'active-remove')}>
                             <div className="menu-btn" onClick={() => setClicked(!clicked)}>
                                 <span className={clicked ? 'active' : ''} style={{ backgroundColor: `${color}` }}></span>
                                 <span className={clicked ? 'active' : ''} style={{ backgroundColor: `${color}` }}></span>

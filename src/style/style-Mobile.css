@@ -91,6 +91,15 @@
     #header .menu {
         margin-left: 25px;
     }
+    
+    #header .menu::before {
+        top: -15vw;
+        right: -50vw;
+        width: 90vw;
+        min-width: 250px;
+        height: 83.33vw;
+        min-height: 340px;
+    }
 
     #header .menu .menu-list nav ul li p {
         font-size: 3.3vw;

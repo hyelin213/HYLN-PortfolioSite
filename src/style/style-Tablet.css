@@ -45,6 +45,7 @@
         height: 2.53vw;
     }
 
+    /* header =========== Start Line ====================================== */
     /* 헤더 전화번호 / 이메일 */
     #header .header-left .info {
         position: absolute;
@@ -64,6 +65,9 @@
     #header .time-check {
         display: none;
     }
+    /* header ======================================= End Line ========== */
+
+
 
     /* intro section =========== Start Line ====================================== */
     /* 라이트모드 & 다크모드 버튼 */

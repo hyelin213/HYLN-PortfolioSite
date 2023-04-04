@@ -12,12 +12,14 @@
     --grey-color: #888;
     --grey-color2: #777;
     --grey-color3: #aaa;
+    --grey-color4: #777;
     --contents-box-color: #F6F6F6;
 
     --top-btn-color: rgba(255, 192, 72, 0.5);
     --top-btn-hover-color: rgba(255, 192, 72, 0.8);
 
     --contents-border-color: #E6E6E6;
+    --menu-bg-color: rgba(246, 246, 246, 0.4);
     --brace-color: #E7E7E7;
     --selection-color: rgb(255, 222, 132);
 }
@@ -31,12 +33,14 @@ html.dark {
     --grey-color: #888;
     --grey-color2: #777;
     --grey-color3: #aaa;
+    --grey-color4: #fff;
     --contents-box-color: #373737;
 
     --top-btn-color: rgba(11, 123, 171, 0.5);
     --top-btn-hover-color: rgba(11, 123, 171, 0.8);
 
     --contents-border-color: #383838;
+    --menu-bg-color: rgba(110, 110, 110, 0.4);
     --brace-color: #444444;
     --selection-color: rgb(199, 230, 255);
 }
@@ -267,12 +271,53 @@ html.dark {
     margin-left: 72.56px;
 }
 
+#header .menu::before {
+    content: '';
+    position: absolute;
+    top: -5rem;
+    right: -15rem;
+    width: 27rem;
+    height: 25rem;
+    border-radius: 100%;
+    background-color: var(--menu-bg-color);
+    backdrop-filter: blur(10px);
+    transform: scale(0);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .15);
+}
+#header .menu.active::before {
+    animation: menubg .3s ease-in;
+    animation-fill-mode: forwards;
+}
+
+#header .menu.active-remove::before {
+    animation: menubg-remove .3s ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes menubg {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes menubg-remove {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+
 #header .menu .menu-btn {
     display: flex;
     flex-direction: column;
     cursor: pointer;
     transform-origin: center;
     position: relative;
+    z-index: 98;
 }
 
 #header .menu .menu-btn span {
@@ -311,7 +356,7 @@ html.dark {
     top: 0;
     left: 0;
     animation: menu2 .1s .3s linear;
-    animation-fill-mode:forwards;
+    animation-fill-mode: forwards;
 }
 
 #header .menu .menu-btn span.active:not(:first-child) {
@@ -322,6 +367,7 @@ html.dark {
     position: absolute;
     top: 60px;
     right: 0;
+    z-index: 99;
     text-align: right;
 }
 
@@ -346,9 +392,10 @@ html.dark {
 }
 
 #header .menu .menu-list nav ul li {
-    color: var(--grey-color2);
+    color: var(--grey-color4);
     font-family: 'GmarketSansLight';
     cursor: pointer;
+    opacity: 0;
 }
 
 #header .menu .menu-list nav ul li p {
@@ -364,16 +411,20 @@ html.dark {
 }
 
 #header .menu .menu-list nav ul li:first-child {
-    animation: menuList .2s linear;
+    animation: menuList .2s .4s linear;
+    animation-fill-mode: forwards;
 }
 #header .menu .menu-list nav ul li:nth-child(2) {
-    animation: menuList2 .3s linear;
+    animation: menuList2 .3s .4s linear;
+    animation-fill-mode: forwards;
 }
 #header .menu .menu-list nav ul li:nth-child(3) {
-    animation: menuList2 .4s linear;
+    animation: menuList2 .4s .4s linear;
+    animation-fill-mode: forwards;
 }
 #header .menu .menu-list nav ul li:last-child {
-    animation: menuList2 .5s linear;
+    animation: menuList2 .5s .4s linear;
+    animation-fill-mode: forwards;
 }
 
 #contents-swiper {
