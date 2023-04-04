@@ -91,7 +91,7 @@
     #header .menu {
         margin-left: 25px;
     }
-    
+
     #header .menu::before {
         top: -15vw;
         right: -50vw;

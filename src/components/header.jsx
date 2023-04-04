@@ -21,6 +21,10 @@ export default function Header({ color, section }) {
         }
     }, []);
 
+    function menuActive() {
+        return clicked ? 'active' : 'active-remove';
+    }
+
     return (
         <>
             <header id="header">
@@ -43,13 +47,15 @@ export default function Header({ color, section }) {
                                 style={{ marginLeft: `${darkMode ? '34' : '4'}px` }}
                             ></div>
                         </div>
-                        <div className={classNames('menu', clicked ? 'active' : 'active-remove')}>
+                        <div
+                            className={classNames('menu', clicked ? 'active' : 'active-remove')}
+                        >
                             <div className="menu-btn" onClick={() => setClicked(!clicked)}>
                                 <span className={clicked ? 'active' : ''} style={{ backgroundColor: `${color}` }}></span>
                                 <span className={clicked ? 'active' : ''} style={{ backgroundColor: `${color}` }}></span>
                                 <span className={clicked ? 'active' : ''} style={{ backgroundColor: `${color}` }}></span>
                             </div>
-                            <div className="menu-list" style={{display: clicked ? 'block' : 'none'}}>
+                            <div className="menu-list" style={{ display: clicked ? 'block' : 'none' }}>
                                 <nav>
                                     <ul>
                                         <li onClick={() => section(0)}>
