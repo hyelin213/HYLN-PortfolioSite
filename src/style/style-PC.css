@@ -1326,7 +1326,7 @@ html.dark {
 #contact .contact-contents span {
     display: inline-block;
     width: 2px;
-    height: 2.5vw;
+    height: 2vw;
     background-color: var(--main-color);
 }
 

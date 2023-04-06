@@ -21,10 +21,6 @@ export default function Header({ color, section }) {
         }
     }, []);
 
-    function menuActive() {
-        return clicked ? 'active' : 'active-remove';
-    }
-
     return (
         <>
             <header id="header">
@@ -32,8 +28,6 @@ export default function Header({ color, section }) {
                     <div className="header-left">
                         <h2 className="logo" style={{ color: `${color}` }}>HYLN</h2>
                         <div className="info">
-                            <a href="tel:+82 10-2932-6426" className="phone-num">+82 10 2932 6426</a>
-                            <span>/</span>
                             <a href="mailto:myelin0213@gmail.com" className="email">myelin0213@gmail.com</a>
                         </div>
                     </div>
