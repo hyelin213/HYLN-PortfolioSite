@@ -23,3 +23,22 @@
 <br/>
 
 ## :pushpin:주요기능
+#### 페이지 스크롤
+- Swiper.js를 사용하여 모바일 버전에서도 원 페이지 스크롤 효과 부여
+
+#### 라이트/다크 모드
+- 부모 컴포넌트에 Context Provider를 지정하여 모드 버튼을 누를 때마다 업데이트
+
+#### 메뉴
+- toggle 형식으로 상태를 관리하며 클래스 값 변동
+
+#### About section
+- Swiper.js를 사용하여 같은 주제의 title과 contents가 매치되도록 슬라이드
+- 이스터에그 추가
+
+#### Project section
+- Router를 사용하여 현재 페이지에서 렌더링되는 SPA 구현
+- 페이지 전환 시 CSStransition을 통해 전환 방향 지정
+
+#### Contact section
+- Waypoint.js를 사용하여 영역 진입 시 헤더 및 메뉴 색상 변경
