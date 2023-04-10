@@ -264,15 +264,18 @@
     }
 
     #about .about-right .about-contents .content-2-skill .tool-skill {
-        margin-top: 14.5vw;
+        margin-top: 10vw;
     }
 
     #about .about-right .about-contents .content-2-skill .icon {
-        height: 11.5vw;
-        margin-top: 6.2vw;
+        width: 42.5vw;
+        margin-top: 3vw;
+        gap: 4vw 7vw;
     }
-    #about .about-right .about-contents .content-2-skill .icon img:not(:last-child) {
-        margin-right: 3.7vw;
+
+    #about .about-right .about-contents .content-2-skill .icon img {
+        width: 9.5vw;
+        height: 9.5vw;
     }
 
     /* about-3)aspirations */

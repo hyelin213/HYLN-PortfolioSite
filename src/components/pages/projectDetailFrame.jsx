@@ -67,7 +67,7 @@ export default function ProjectDetailFrame
                             className="detail-view"
                             slidesPerView={1}
                             spaceBetween={10}
-                            autoplay={{ delay: 4000 }}
+                            autoplay={{ delay: 3000 }}
                             allowTouchMove={false}
                         >
                             <ProjectDetailAbout

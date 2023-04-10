@@ -656,7 +656,7 @@ html.dark {
 }
 
 #about .about-left .title p.shake-text {
-    animation: textShake 1.7s linear infinite;
+    animation: textShake 1s linear infinite;
 }
 
 #about .about-left .title p.jump-text {
@@ -806,14 +806,12 @@ html.dark {
 
 #about .about-right .about-contents .content-2-skill .tool-skill {
     margin-top: 1.7vw;
-    /* margin-top: 3.6vw; */
 }
 
 #about .about-right .about-contents .content-2-skill .icon {
     width: 12.1vw;
     height: 100%;
     margin-top: 1vw;
-    /* margin-top: 1.5vw; */
     display: flex;
     flex-wrap: wrap;
     gap: 1vw 2vw;
@@ -822,6 +820,7 @@ html.dark {
 #about .about-right .about-contents .content-2-skill .icon img {
     width: 2.7vw;
     height: 2.7vw;
+    /* width, height 3vw */
     height: 100%;
 }
 
