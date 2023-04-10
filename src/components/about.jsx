@@ -151,12 +151,16 @@ export default function About() {
                                                 <img src={`${url}/images/skill_icon/css_3.png`} alt="css_3.icon" />
                                                 <img src={`${url}/images/skill_icon/js.png`} alt="js.icon" />
                                                 <img src={`${url}/images/skill_icon/atom.png`} alt="atom.icon" />
+                                                <img src={`${url}/images/skill_icon/sass.png`} alt="sass.icon" />
+                                                <img src={`${url}/images/skill_icon/jquery.png`} alt="jquery.icon" />
                                             </div>
                                         </div>
                                         <div className="tool-skill">
                                             <h3>Tools Skills</h3>
                                             <div className="icon">
                                                 <img src={`${url}/images/skill_icon/github_color.png`} alt="github_color.icon" />
+                                                <img src={`${url}/images/skill_icon/notion.png`} alt="notion.icon" />
+                                                <img src={`${url}/images/skill_icon/slack.png`} alt="slack.icon" />
                                                 <img src={`${url}/images/skill_icon/figma.png`} alt="figma.icon" />
                                                 <img src={`${url}/images/skill_icon/illustrator.png`} alt="illustrator.icon" />
                                                 <img src={`${url}/images/skill_icon/photoshop.png`} alt="photoshop.icon" />
