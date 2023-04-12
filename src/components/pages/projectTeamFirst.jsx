@@ -14,7 +14,7 @@ export default function ProjectTeamFirst() {
         메인 페이지로 넘어가는 방법은 잠금 해제의 주문, 'Alohomora'를 입력하세요.`
     );
 
-    const projectView = ['img_1', 'img_2', 'img_3'];
+    const projectView = ['img_1', 'img_2', 'img_3', 'img_4'];
 
     return (
         <>

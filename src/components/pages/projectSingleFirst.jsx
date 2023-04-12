@@ -15,7 +15,7 @@ export default function ProjectSingleFirst() {
         `
     );
 
-    const projectView = ['img_1', 'img_2', 'img_3'];
+    const projectView = ['img_1', 'img_2', 'img_3', 'img_4'];
 
     return (
         <>
