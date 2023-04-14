@@ -58,7 +58,7 @@ html.dark {
     }
 }
 
-@keyframes textShake {
+/* @keyframes textShake {
     0%,
     40% {
         transform: rotate(0deg);
@@ -112,7 +112,7 @@ html.dark {
     100% {
         opacity: 0;
     }
-}
+} */
 
 @keyframes fadeIn {
 
@@ -655,13 +655,13 @@ html.dark {
     color: var(--black-color);
 }
 
-#about .about-left .title p.shake-text {
+/* #about .about-left .title p.shake-text {
     animation: textShake 1s linear infinite;
 }
 
 #about .about-left .title p.jump-text {
     animation: textJump 0.9s ease;
-}
+} */
 
 #about .about-left .title span {
     display: inline-block;
@@ -671,9 +671,9 @@ html.dark {
     opacity: 0;
 }
 
-#about .about-left .title span.oooops {
+/* #about .about-left .title span.oooops {
     animation: oooops 1.2s linear;
-}
+} */
 
 #about .about-left .introduction {
     width: 18vw;

@@ -47,13 +47,16 @@ export default function About() {
                                     handleClick();
                                     numberClick();
                                 }}>
-                                    <h2>안녕하세요</h2>
-                                    <p
+                                    <h2>안녕하세요!</h2>
+                                    {/* <p
                                         className={clicked ? 'jump-text' : 'shake-text'}
                                     >
                                         {changeTxt}
                                     </p>
                                     <span className={clicked ? 'oooops' : ''}>oops!</span>
+                                    
+                                    이스터에그 요소로 넣었으나, UI 접근 방식이 잘못되어(의도대로 행해지지 않음 등) 임시 주석처리함
+                                    */}
                                 </div>
                                 <div className="introduction">
                                     <p>Front-end 개발자로 성장하는 <br className="PC-exposure" />김혜린입니다.</p>
@@ -153,16 +156,14 @@ export default function About() {
                                                 <img src={`${url}/images/skill_icon/js.png`} alt="js.icon" />
                                                 <img src={`${url}/images/skill_icon/atom.png`} alt="atom.icon" />
                                                 <img src={`${url}/images/skill_icon/sass.png`} alt="sass.icon" />
-                                                <img src={`${url}/images/skill_icon/jquery.png`} alt="jquery.icon" />
                                             </div>
                                         </div>
                                         <div className="tool-skill">
                                             <h3>Tools Skills</h3>
                                             <div className="icon">
                                                 <img src={`${url}/images/skill_icon/github_color.png`} alt="github_color.icon" />
-                                                <img src={`${url}/images/skill_icon/notion.png`} alt="notion.icon" />
-                                                <img src={`${url}/images/skill_icon/slack.png`} alt="slack.icon" />
                                                 <img src={`${url}/images/skill_icon/figma.png`} alt="figma.icon" />
+                                                <img src={`${url}/images/skill_icon/slack.png`} alt="slack.icon" />
                                                 <img src={`${url}/images/skill_icon/illustrator.png`} alt="illustrator.icon" />
                                                 <img src={`${url}/images/skill_icon/photoshop.png`} alt="photoshop.icon" />
                                             </div>
