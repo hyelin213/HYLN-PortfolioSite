@@ -34,7 +34,6 @@
 
 #### About section
 - Swiper.js를 사용하여 같은 주제의 title과 contents가 매치되도록 슬라이드
-- 이스터에그 추가
 
 #### Project section
 - Router를 사용하여 현재 페이지에서 렌더링되는 SPA 구현
