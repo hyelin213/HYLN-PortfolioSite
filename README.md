@@ -18,7 +18,7 @@
 > 2023.03.18~ 2023.04.06
 
 ### :computer:개발환경
-> `React(v18.2.0)`<br/>
+> `React(v18.2.0)`<br/> 
 > `Css3`<br/>
 <br/>
 
@@ -27,13 +27,13 @@
 - Swiper.js를 사용하여 모바일 버전에서도 원 페이지 스크롤 효과 부여
 
 #### 라이트/다크 모드
-- 부모 컴포넌트에 Context Provider를 지정하고 모드 버튼을 누를 때마다 html 태그에 classname "dark"를 추가 및 제거하여 화면 업데이트
+- 부모 컴포넌트에 Context Provider를 지정하고 모드 버튼을 누를 때마다 html 태그에 className "dark"를 추가 및 제거하여 화면 업데이트
 
 #### 메뉴
 - toggle 형식으로 상태를 관리하며 클래스 값 변동
 
 #### About section
-- Swiper.js를 사용하여 같은 주제의 title과 contents가 매치되도록 슬라이드
+- Swiper.js를 사용하여 같은 주제의 title과 content가 매치되도록 슬라이드
 
 #### Project section
 - Router를 사용하여 현재 페이지에서 렌더링되는 SPA 구현
