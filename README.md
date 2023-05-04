@@ -27,7 +27,7 @@
 - Swiper.js를 사용하여 모바일 버전에서도 원 페이지 스크롤 효과 부여
 
 #### 라이트/다크 모드
-- 부모 컴포넌트에 Context Provider를 지정하고 모드 버튼을 누를 때마다 html 태그에 className "dark"를 추가 및 제거하여 화면 업데이트
+- 부모 컴포넌트에 Context Provider를 지정하고 모드 버튼을 누를 때마다 html 태그에 className "dark"를 추가 및 제거하여 UI 업데이트
 
 #### 메뉴
 - toggle 형식으로 상태를 관리하며 클래스 값 변동
