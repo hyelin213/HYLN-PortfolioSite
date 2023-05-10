@@ -33,7 +33,7 @@
 - toggle 형식으로 상태를 관리하며 클래스 값 변동
 
 #### About section
-- Swiper.js를 사용하여 같은 주제의 title과 content가 매치되도록 슬라이드
+- Swiper.js를 사용하여 같은 주제의 title과 content의 내용이 매치되도록 슬라이드
 
 #### Project section
 - Router를 사용하여 현재 페이지에서 렌더링되는 SPA 구현
