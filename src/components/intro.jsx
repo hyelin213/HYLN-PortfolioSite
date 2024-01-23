@@ -8,10 +8,10 @@ export default function Intro() {
     return (
         <>
             <div className="center-title">
-                <h1>2023 <span>HYLN</span></h1>
+                <h1>2024 <span>HYLN</span></h1>
                 <div className="greeting-ment">
                     <p>Welcome to my Portfolio Site!</p>
-                    <p>Enjoy it.</p>
+                    <p>Enjoy it✨</p>
                 </div>
             </div>
             <div className="light-dark-mode" onClick={toggleDarkMode}>

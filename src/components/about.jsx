@@ -18,7 +18,7 @@ export default function About() {
     const [clicked, setClicked] = useState(false);
     const { darkMode, toggleDarkMode } = useDarkMode();
 
-    const keywords = ['신입', 'FE', '성장하는', '도전적인', '탐구심'];
+    const keywords = ['신입', '퍼블리싱', '성장하는', '도전적인', '탐구심'];
 
     function handleClick() {
         setClicked(true);
@@ -59,7 +59,7 @@ export default function About() {
                                     */}
                                 </div>
                                 <div className="introduction">
-                                    <p>Front-end 개발자로 성장하는 <br className="PC-exposure" />김혜린입니다.</p>
+                                    <p>UI 개발을 좋아하는 <br className="PC-exposure" /><b>웹 퍼블리셔</b> 김혜린입니다.</p>
                                 </div>
                                 <div className="keywords">
                                     {keywords.map(item => (<p style={{ color: darkMode ? 'var(--black-color)' : '' }}>{item}</p>))}
@@ -101,7 +101,7 @@ export default function About() {
                                 <SwiperSlide className="title-3-aspi">
                                     <div className="title-3-container">
                                         <h3 className="if-title">if</h3>
-                                        <p className="if-branch-text">became a<br />front-end developer</p>
+                                        <p className="if-branch-text">became a<br />Web Publisher</p>
                                     </div>
                                     <div className="parentheses">
                                         <span className="left">{'('}</span>
@@ -134,11 +134,11 @@ export default function About() {
                             >
                                 <SwiperSlide className="content-1-info">
                                     <div className="content-1-container">
-                                        <h3>디자인에서<br />프론트엔드 개발까지.</h3>
+                                        <h3>디자이너에서<br />퍼블리셔가 되기까지.</h3>
                                         <p>
                                             서양화과를 졸업하고 디자인을 배웠습니다.<br />
                                             웹 UI를 디자인하면서 ‘이런 기능은 어떻게 만들까?’<br />
-                                            라는 호기심에서 시작해 프론트엔드 개발 영역까지<br />
+                                            라는 호기심에서 시작해 UI 개발 영역으로 차근차근<br />
                                             역량을 넓혀가고 있습니다.<br /><br />
 
                                             함께하는 동료와 사용자들에게 편리함을 제공할 수<br />
@@ -149,7 +149,7 @@ export default function About() {
                                 <SwiperSlide className="content-2-skill">
                                     <div className="content-2-container">
                                         <div className="FE-skill">
-                                            <h3>FE Skills</h3>
+                                            <h3>Develop Skills</h3>
                                             <div className="icon">
                                                 <img src={`${url}/images/skill_icon/html_5.png`} alt="html_5.icon" />
                                                 <img src={`${url}/images/skill_icon/css_3.png`} alt="css_3.icon" />
@@ -159,11 +159,10 @@ export default function About() {
                                             </div>
                                         </div>
                                         <div className="tool-skill">
-                                            <h3>Tools Skills</h3>
+                                            <h3>Tool Skills</h3>
                                             <div className="icon">
                                                 <img src={`${url}/images/skill_icon/github_color.png`} alt="github_color.icon" />
                                                 <img src={`${url}/images/skill_icon/figma.png`} alt="figma.icon" />
-                                                <img src={`${url}/images/skill_icon/slack.png`} alt="slack.icon" />
                                                 <img src={`${url}/images/skill_icon/illustrator.png`} alt="illustrator.icon" />
                                                 <img src={`${url}/images/skill_icon/photoshop.png`} alt="photoshop.icon" />
                                             </div>
